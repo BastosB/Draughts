@@ -1,0 +1,107 @@
+open Gamebase
+
+(* These types are abstract in game.mli *)
+
+(* For the moment, we just implement the "count-20" game. 
+ * Keep these types as such. *)
+
+type state = ((char matrix) * player)  
+
+type move = (int * int) * (int * int)  (* Move from A(x,y) to B(x',y') *)
+
+type result = Win of player | Even  
+
+(* Printers.
+ * Guess what sprintf does (not  printf). *)
+let state2s (m,p) = Printf.sprintf "Current = \n\n%s\n\n  --> %s to play\n%!" (matrix2s m escaped) (player2s p)
+
+let move2s (x,y) (u,v) = Printf.sprintf "Move from (%d,%d) to (%d,%d)\n%!" x y u v 
+
+let result2s = function
+	|Even -> "Even game !!"
+	|Win(p) -> (player2s p) ^ " WINS !! "
+
+(* Reader 
+ * We use sscanf here. (In this simple case, int_of_string would suffice.) *)
+let readmove s =
+  try Some (Scanf.sscanf s "%d" (fun x y u v -> (x,y),(u,v)))
+  with _ -> None
+
+(* You have to provide these. *)
+let initial = [|[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		  [| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		  [| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		  [| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		  [| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		  [| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		  [| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		  [| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
+		  [| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		  [| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |]
+		  
+
+let turn (m,p) = p 
+
+let in_board mat (x,y) = 
+	if ( (0 <= x) && (x < Array.length mat) && (0 <= y) && (y < Array.length mat) ) then true 
+	else false 
+
+(*val is_valid: state -> move -> bool*)
+let is_valid (mat,pla) ((x,y),(u,v)) = 
+	if not((in_board mat (x,y)) && (in_board mat (u,v))) then false (* If the coordonates are not if the board, false*)
+	else
+		if pla = Comput then 		(* Comput is black and upside *)
+			if (mat.x).y = 'n' then
+				if (u = (x-1)) && ( (v=(y-1)) or (v=(y+1))) then true 	else false	 (* cas basique, le pion avance *)
+				(*A FAIRE : else if (*le pion mange un pion : attention, un pion peut manger en arrière *) *)
+		else if pla = Human then 		(* Human is white and downside*)
+			if (mat.x).y = 'b' then
+				if (u = (x+1)) && ( (v=(y-1)) or (v=(y+1))) then true else false
+				(*A FAIRE : else if (*le pion mange un pion : attention, un pion peut manger en arrière *) *)
+
+(* val play: state -> move -> state *)
+let play (mat,pla) ((x,y),(u,v)) = (mat, pla)
+	(*match pla with 
+	|Comput ->  
+	|Human -> *)
+	
+(*val one_men_all_moves: state -> (int,int) -> move list *)
+let one_men_all_moves (mat,pla) (x,y) acu = (* On ne prend pas encore en compte le fait qu'on puisse manger les pions*)
+	match pla with 
+	|Comput -> if (mat.x).y = 'b' then ((x,y),(x-1,y-1)) :: ((x,y),(x-1,y+1)) :: l (* on est les noirs, on va vers le bas *)
+	|Human ->  if (mat.x).y = 'w' then ((x,y),(x+1,y-1)) :: ((x,y),(x+1,y+1)) :: l (* on est les blancs, on va vers le haut *)
+	else acu
+	
+	
+(*val all_moves: state -> move list*)
+let all_moves (mat, pla) = (* déplacement simple : pas de prise en compte des pions adverses *) 
+	let l = [] in 
+	Array.mapi (fun i mat.i -> (Array.mapi (fun j (mat.i).j -> (one_men_all_moves (mat,pla) (i,j) l)) mat.i)) mat
+
+(*val result: state -> result option*)
+let result (mat,pla) = 
+	match pla with 
+	|Human -> match find_cell mat (fun c -> if c = 'b' then true else false) with
+			|None -> None
+			|Some x -> Some (Win(Human))
+	|Comput -> match find_cell mat (fun c -> if c = 'w' then true else false) with
+			|None -> None
+			|Some x -> Some (Win(Comput))
+(* This type was given in game.mli.
+ * We have to repeat it here. *)
+type comparison = Equal | Greater | Smaller
+
+let compare player r1 r2 = 
+	let other_player = match player with 
+				|Human -> Comput 
+				|Comput -> Human in 
+	
+	(if r1 = r2 then Equal 
+	else if (r2 = Win(player)) or (r2 = Even && r1 = Win(other_player) then Greater
+	else Smaller)
+	
+(* val worst_for: player -> result *)
+let worst_for player = match player with 
+	|Human -> Win(Comput)
+  	|Comput -> Win(Human)
+  

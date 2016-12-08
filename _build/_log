@@ -1,0 +1,32 @@
+### Starting build.
+# Target: gameplay.ml.depends, tags: { debug, extension:ml, file:gameplay.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules gameplay.ml > gameplay.ml.depends # cached
+# Target: game.mli.depends, tags: { debug, extension:mli, file:game.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules game.mli > game.mli.depends # cached
+# Target: gamebase.mli.depends, tags: { debug, extension:mli, file:gamebase.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules gamebase.mli > gamebase.mli.depends # cached
+# Target: gamebase.cmi, tags: { byte, compile, debug, extension:mli, file:gamebase.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o gamebase.cmi gamebase.mli # cached
+# Target: game.cmi, tags: { byte, compile, debug, extension:mli, file:game.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o game.cmi game.mli # cached
+# Target: game_ia.mli.depends, tags: { debug, extension:mli, file:game_ia.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules game_ia.mli > game_ia.mli.depends # cached
+# Target: game_ia.cmi, tags: { byte, compile, debug, extension:mli, file:game_ia.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o game_ia.cmi game_ia.mli # cached
+# Target: gameplay.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:gameplay.cmo, file:gameplay.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o gameplay.cmo gameplay.ml # cached
+# Target: game.ml.depends, tags: { debug, extension:ml, file:game.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules game.ml > game.ml.depends
+# Target: game_ia.ml.depends, tags: { debug, extension:ml, file:game_ia.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules game_ia.ml > game_ia.ml.depends
+# Target: gamebase.ml.depends, tags: { debug, extension:ml, file:gamebase.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep.opt -modules gamebase.ml > gamebase.ml.depends # cached
+# Target: gamebase.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:gamebase.cmo, file:gamebase.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o gamebase.cmo gamebase.ml # cached
+# Target: game.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:game.cmo, file:game.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o game.cmo game.ml
+# Target: game_ia.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:game_ia.cmo, file:game_ia.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc.opt -c -g -o game_ia.cmo game_ia.ml
+# Target: gameplay.byte, tags: { byte, debug, dont_link_with, extension:byte, file:gameplay.byte, link, ocaml, program, quiet, traverse }
+/usr/bin/ocamlc.opt -g gamebase.cmo game.cmo game_ia.cmo gameplay.cmo -o gameplay.byte
+# Compilation successful.
