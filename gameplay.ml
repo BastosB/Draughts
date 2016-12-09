@@ -36,6 +36,11 @@ let rec run with_ia state =
   Printf.printf "Valid moves : \n " ;
   if (all_moves state) = [] then Printf.printf "Aucun mouvement possible ! \n%!" 
   else  List.iter (Printf.printf " %s\n%! ")  (List.map move2s (List.filter (is_valid state) (all_moves state)))  ;
+    Printf.printf "----------------- \n " ;
+
+  (* Printf.printf "Valid captures : \n " ;
+  if (get_all_captures state) = [] then Printf.printf "Aucun mouvement possible ! \n%!" 
+  else  List.iter (Printf.printf " %s\n%! ")  (List.map move2s (List.filter (is_valid state) (get_all_captures state)))  ;*)
 
   
   match result state with
