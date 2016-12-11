@@ -28,22 +28,67 @@ let readmove s =
   with _ -> None
 
 (* You have to provide these. *)
-let initial = ([|[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
-		  [| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
-		  [| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
-		  [| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
-		  [| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-		  [| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-		  [| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
-		  [| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
-		  [| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
-		  [| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human)
-		  
+(*let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) *)
+(* let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
+
+
+(* let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
+
+	let initial = ( [| 	
+						[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human)
+
+(* let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
+
+
+
+
+		(* let initial = ( [| 	
+						[| 'b' ; ' ' ; 'b' |] ; 
+						[| ' ' ; ' ' ; ' ' |] ; 
+						[| 'w' ; ' ' ; 'w' |]|], Human)	  *)
+
 
 let turn (m,p) = p 
 
+let nextPlayer state = 
+	match (turn state) with 
+        | Human -> Comput 
+        | Comput -> Human 
+
 let in_board mat (x,y) = 
-	if ( (0 <= x) && (x < Array.length mat) && (0 <= y) && (y < Array.length mat) ) then true 
+	if ( (0 <= x) && (x < Array.length mat) && (0 <= y) && (y < Array.length mat.(x)) ) then true 
 	else false 
 
 (*val is_valid: state -> move -> bool*)
@@ -52,35 +97,84 @@ let is_valid (mat,pla) ((x,y),(u,v)) =
 	else 
 		(match pla with 
 		| Comput -> (if (mat.(x)).(y) = 'b' then 
-						(if (u = (x+1)) && ( (v=(y-1)) || (v=(y+1)) ) then true else false) 
+						(if (u = (x+1)) && ( (v = (y-1)) || (v=(y+1)) ) && mat.(u).(v) = ' ' then true (* Basic move *)
+						else if (u = (x+2)) || (u = (x-2)) then true else false) (* This is a capture. By construction, it is valid. *)
 					else false)
-(*A FAIRE : else if (*le pion mange un pion : attention, un pion peut manger en arrière *) *)
 		| Human -> (if (mat.(x)).(y) = 'w' then 
-						(if (u = (x-1)) && ( (v=(y-1)) || (v=(y+1))) then true else false)
+						(if (u = (x-1)) && ( (v=(y-1)) || (v=(y+1))) && mat.(u).(v) = ' ' then true 
+						else if (u = (x+2)) || (u = (x-2)) then true 
+						else false) (* This is a capture. By construction, it is valid. *)
 					else false))
-(*A FAIRE : else if (*le pion mange un pion : attention, un pion peut manger en arrière *) *) 
 
 
 
 (* val play: state -> move -> state *)
 let play (mat,pla) ((x,y),(u,v)) = 
-	let new_mat = clone_matrix mat in
-	match pla with 
-	| Human -> (new_mat.(x)).(y) <- ' ' ; (new_mat.(u)).(v) <- 'w' ; (new_mat,Comput)
-	| Comput -> (new_mat.(x)).(y) <- ' ' ; (new_mat.(u)).(v) <-'b' ; (new_mat,Human)	
+	let next_player = match pla with 
+								| Human -> Comput
+								| Comput -> Human in 
 	
-(*val all_moves: state -> move list*)
-let all_moves (mat, pla) = (* déplacement simple : pas de prise en compte des pions adverses *) 
-let move_list = ref [] in 
+	if (u=x+1) || (u=x-1) then (
+		let new_mat = clone_matrix mat in (
+			(new_mat.(x)).(y) <- ' ' ; 
+			(new_mat.(u)).(v) <- (match pla with 
+									| Human -> 'w'
+									| Comput -> 'b') ;
+			(new_mat,next_player)))
+	else if (u=x+2) || (u=x-2) then (
+		let new_mat = clone_matrix mat in (
+			(new_mat.(x)).(y) <- ' ' ; 
+			(new_mat.(u)).(v) <- (match pla with 
+									| Human -> 'w'
+									| Comput -> 'b') ; 
+			(new_mat.(x-(x-u)/2)).(y-(y-v)/2) <- ' ' ;
+			(new_mat,next_player)))
+else assert false 
+
+
+let get_all_captures (mat,pla) = 
+	let capture_list = ref [] in 
 	for x = 0 to Array.length mat - 1 do
       let line = mat.(x) in
       for y = 0 to Array.length line - 1 do
 		match pla with 
-		|Comput -> if (mat.(x)).(y) = 'b' then move_list := ((x,y),((x+1),(y-1))) :: ((x,y),((x+1),(y+1))) :: !move_list else move_list := !move_list (* on est les noirs, on va vers le bas *)
-		|Human ->  if (mat.(x)).(y) = 'w' then move_list :=((x,y),((x-1),(y-1))) :: ((x,y),((x-1),(y+1))) :: !move_list else move_list := !move_list
+		|Comput -> (if x+1 < Array.length mat -1 && y+1 < Array.length mat.(x) -1 && (mat.(x)).(y) = 'b' && (mat.(x+1)).(y+1) = 'w' && (mat.(x+2)).(y+2) = ' ' then capture_list := ((x,y),((x+2),(y+2))) :: !capture_list else capture_list := !capture_list ;
+					if x+1< Array.length mat -1 && y-1 > 0 && (mat.(x)).(y) = 'b' && (mat.(x+1)).(y-1) = 'w' && (mat.(x+2)).(y-2) = ' ' then capture_list := ((x,y),((x+2),(y-2))) :: !capture_list else capture_list := !capture_list ;
+					if x-1 > 0 && y+1 < Array.length mat.(x) -1 && (mat.(x)).(y) = 'b' && (mat.(x-1)).(y+1) = 'w' && (mat.(x-2)).(y+2) = ' ' then capture_list := ((x,y),((x-2),(y+2))) :: !capture_list else capture_list := !capture_list ;
+					if x-1 > 0 && y-1 > 0 && (mat.(x)).(y) = 'b' && (mat.(x-1)).(y-1) = 'w' && (mat.(x-2)).(y-2) = ' ' then capture_list := ((x,y),((x-2),(y-2))) :: !capture_list else capture_list := !capture_list )
+
+
+
+		|Human ->  (if x+1 < Array.length mat -1 && y+1 < Array.length mat.(x) -1 && (mat.(x)).(y) = 'w' && (mat.(x+1)).(y+1) = 'b' && (mat.(x+2)).(y+2) = ' ' then capture_list := ((x,y),((x+2),(y+2))) :: !capture_list else capture_list := !capture_list ;
+					if x+1 < Array.length mat -1 && y-1 > 0 && (mat.(x)).(y) = 'w' && (mat.(x+1)).(y-1) = 'b' && (mat.(x+2)).(y-2) = ' ' then capture_list := ((x,y),((x+2),(y-2))) :: !capture_list else capture_list := !capture_list ;
+					if x-1 > 0 && y+1 < Array.length mat.(x) -1 && (mat.(x)).(y) = 'w' && (mat.(x-1)).(y+1) = 'b' && (mat.(x-2)).(y+2) = ' ' then capture_list := ((x,y),((x-2),(y+2))) :: !capture_list else capture_list := !capture_list ;
+					if x-1 > 0 && y-1 > 0 && (mat.(x)).(y) = 'w' && (mat.(x-1)).(y-1) = 'b' && (mat.(x-2)).(y-2) = ' ' then capture_list := ((x,y),((x-2),(y-2))) :: !capture_list else capture_list := !capture_list )
       done ;
     done;
-!move_list 
+!capture_list
+
+
+
+	
+(*val all_captures: state -> move list*)
+let all_moves (mat, pla) =  
+	let all_captures = get_all_captures (mat,pla) in 
+		if all_captures = [] then
+		(let move_list = ref [] in (* déplacement simple *)
+			for x = 0 to Array.length mat - 1 do
+		      let line = mat.(x) in
+		      for y = 0 to Array.length line - 1 do
+				match pla with 
+				|Comput -> if (mat.(x)).(y) = 'b' then move_list := ((x,y),((x+1),(y-1))) :: ((x,y),((x+1),(y+1))) :: !move_list else move_list := !move_list
+				|Human ->  if (mat.(x)).(y) = 'w' then move_list :=((x,y),((x-1),(y-1))) :: ((x,y),((x-1),(y+1))) :: !move_list else move_list := !move_list
+		      done ;
+		    done; 
+		!move_list)
+		else all_captures (* It is possible, and so a men MUST capture another one *)
+
+
+	(* Il faut que j'arrive à trouver tous les enchainements qui bouffent les pions*)
+
 
 
 (*val result: state -> result option*)

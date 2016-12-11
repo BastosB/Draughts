@@ -44,6 +44,8 @@ val initial: state
 (* Indicates which player must play now, in the current state. *)
 val turn: state -> player
 
+val nextPlayer: state -> player
+
 (* Indicates if a move is valid in the current state. *)
 val is_valid: state -> move -> bool
 
@@ -58,6 +60,9 @@ val play: state -> move -> state
  * The argument 'state' can be useful in some games (e.g. chess) *)
 
 val all_moves: state -> move list
+
+val get_all_captures: state -> move list
+
 
 (* Returns the result of the game. None if the result is not known yet. *)
 val result: state -> result option

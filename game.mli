@@ -44,6 +44,8 @@ val initial: state
 (* Indicates which player must play now, in the current state. *)
 val turn: state -> player
 
+val nextPlayer: state -> player
+
 (* Indicates if a move is valid in the current state. *)
 val is_valid: state -> move -> bool
 

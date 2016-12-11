@@ -25,17 +25,20 @@ let ia_move state =
   let (mov, _) = Game_ia.best_move state in
   match mov with
   | None -> assert false
-  | Some m -> m
+  | Some m -> Printf.printf "%s" (move2s m) ; m 
   
 (*** Each player in turn. ***)
     
 let rec run with_ia state =
-  
+
   (* Print state & which player to play. *)
   Printf.printf "\n%s\n %s to play.\n\n%!" (state2s state) (player2s (turn state)) ;
   Printf.printf "Valid moves : \n " ;
   if (all_moves state) = [] then Printf.printf "Aucun mouvement possible ! \n%!" 
   else  List.iter (Printf.printf " %s\n%! ")  (List.map move2s (List.filter (is_valid state) (all_moves state)))  ;
+  
+  Printf.printf "----------------- \n " ;
+
 
   
   match result state with

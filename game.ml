@@ -58,18 +58,18 @@ let readmove s =
 		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
 		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
 
-	(* let initial = ( [| 	
+	let initial = ( [| 	
 						[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
 						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
 						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
 						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-						[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human) *)
+						[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human)
 
-let initial = ([|
+(* let initial = ([|
 		[| ' ' ; 'b' ; ' ' ; 'b' |] ; 
 		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
 		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
-		[| 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	
+		[| 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
 
 
 
@@ -81,6 +81,11 @@ let initial = ([|
 
 
 let turn (m,p) = p 
+
+let nextPlayer state = 
+	match (turn state) with 
+        | Human -> Comput 
+        | Comput -> Human 
 
 let in_board mat (x,y) = 
 	if ( (0 <= x) && (x < Array.length mat) && (0 <= y) && (y < Array.length mat.(x)) ) then true 
@@ -94,11 +99,6 @@ let is_valid (mat,pla) ((x,y),(u,v)) =
 		| Comput -> (if (mat.(x)).(y) = 'b' then 
 						(if (u = (x+1)) && ( (v = (y-1)) || (v=(y+1)) ) && mat.(u).(v) = ' ' then true (* Basic move *)
 						else if (u = (x+2)) || (u = (x-2)) then true else false) (* This is a capture. By construction, it is valid. *)
-
-						(*&& (v = (y+2)) && (mat.(x+1)).(y+1) = 'w' then true 
-						else if (u = (x+2)) && (v = (y-2)) && (mat.(x+1)).(y-1) = 'w' then true
-						else if (u = (x-2)) && (v = (y+2)) && (mat.(x-1)).(y+1) = 'w' then true (* Test if a capture is valid *)
-						else if (u = (x-2)) && (v = (y-2)) && (mat.(x-1)).(y-1) = 'w' then true*)
 					else false)
 		| Human -> (if (mat.(x)).(y) = 'w' then 
 						(if (u = (x-1)) && ( (v=(y-1)) || (v=(y+1))) && mat.(u).(v) = ' ' then true 
@@ -168,7 +168,7 @@ let all_moves (mat, pla) =
 				|Comput -> if (mat.(x)).(y) = 'b' then move_list := ((x,y),((x+1),(y-1))) :: ((x,y),((x+1),(y+1))) :: !move_list else move_list := !move_list
 				|Human ->  if (mat.(x)).(y) = 'w' then move_list :=((x,y),((x-1),(y-1))) :: ((x,y),((x-1),(y+1))) :: !move_list else move_list := !move_list
 		      done ;
-		    done;
+		    done; 
 		!move_list)
 		else all_captures (* It is possible, and so a men MUST capture another one *)
 
