@@ -30,7 +30,7 @@ let ia_move state =
 (*** Each player in turn. ***)
     
 let rec run with_ia state =
-  
+
   (* Print state & which player to play. *)
   Printf.printf "\n%s\n %s to play.\n\n%!" (state2s state) (player2s (turn state)) ;
   Printf.printf "Valid moves : \n " ;

@@ -28,7 +28,7 @@ let readmove s =
   with _ -> None
 
 (* You have to provide these. *)
-(*  let initial = ([|
+(*let initial = ([|
 		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
 		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
 		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
@@ -39,11 +39,40 @@ let readmove s =
 		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
 		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
 		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) *)
-	
-	let initial = ( [| 	
-						[| ' ' ; ' ' ; 'b' |] ; 
-						[| ' ' ; ' ' ; ' ' |] ; 
-						[| 'w' ; ' ' ; 'w' |]|], Human)	
+(* let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
+
+
+(* let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
+
+	(* let initial = ( [| 	
+						[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+						[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human) *)
+
+let initial = ([|
+		[| ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	
+
+
+
 
 		(* let initial = ( [| 	
 						[| 'b' ; ' ' ; 'b' |] ; 
@@ -82,7 +111,7 @@ let is_valid (mat,pla) ((x,y),(u,v)) =
 (* val play: state -> move -> state *)
 let play (mat,pla) ((x,y),(u,v)) = 
 	let next_player = match pla with 
-								|Human -> Comput
+								| Human -> Comput
 								| Comput -> Human in 
 	
 	if (u=x+1) || (u=x-1) then (
@@ -98,7 +127,7 @@ let play (mat,pla) ((x,y),(u,v)) =
 			(new_mat.(u)).(v) <- (match pla with 
 									| Human -> 'w'
 									| Comput -> 'b') ; 
-			(new_mat.(abs (x-u) /2)).(abs (y-v) /2) <- ' ' ;
+			(new_mat.(x-(x-u)/2)).(y-(y-v)/2) <- ' ' ;
 			(new_mat,next_player)))
 else assert false 
 
@@ -146,14 +175,6 @@ let all_moves (mat, pla) =
 
 	(* Il faut que j'arrive à trouver tous les enchainements qui bouffent les pions*)
 
-
-let rec cache f = 
-  let memory = Hashtbl.create 30000 in 
-    fun arg -> 
-      if Hashtbl.mem memory arg then Hashtbl.find memory arg
-      else 
-        let nouv = (f arg) in 
-          Hashtbl.add memory arg nouv ; nouv ;; 
 
 
 (*val result: state -> result option*)
