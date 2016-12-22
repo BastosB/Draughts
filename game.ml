@@ -1,4 +1,8 @@
 open Gamebase
+open Functory.Network
+open Functory.Network.Same
+open Functory.Cores
+open Sys
 
 (* These types are abstract in game.mli *)
 
@@ -58,12 +62,12 @@ let readmove s =
 		[| ' ' ; 'w' ; ' ' ; 'w' ; ' ' ; 'w' |] ; 
 		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
 
-	let initial = ( [| 	
-						[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
-						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-						[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
-						[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human)
+let initial = ( [| 	
+		[| 'b' ; ' ' ; 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| ' ' ; ' ' ; ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' ; ' ' ; 'w' |]|], Human)
 
 (* let initial = ([|
 		[| ' ' ; 'b' ; ' ' ; 'b' |] ; 
@@ -72,20 +76,14 @@ let readmove s =
 		[| 'w' ; ' ' ; 'w' ; ' ' |] |], Human) 	*)
 
 
-
-
-		(* let initial = ( [| 	
-						[| 'b' ; ' ' ; 'b' |] ; 
-						[| ' ' ; ' ' ; ' ' |] ; 
-						[| 'w' ; ' ' ; 'w' |]|], Human)	  *)
+(* let initial = ( [| 	
+		[| 'b' ; ' ' ; 'b' |] ; 
+		[| ' ' ; ' ' ; ' ' |] ; 
+		[| 'w' ; ' ' ; 'w' |]|], Human)	  *)
 
 
 let turn (m,p) = p 
 
-let nextPlayer state = 
-	match (turn state) with 
-        | Human -> Comput 
-        | Comput -> Human 
 
 let in_board mat (x,y) = 
 	if ( (0 <= x) && (x < Array.length mat) && (0 <= y) && (y < Array.length mat.(x)) ) then true 
@@ -173,10 +171,6 @@ let all_moves (mat, pla) =
 		else all_captures (* It is possible, and so a men MUST capture another one *)
 
 
-	(* Il faut que j'arrive à trouver tous les enchainements qui bouffent les pions*)
-
-
-
 (*val result: state -> result option*)
 let result (mat,pla) = 
 	match pla with 
@@ -191,22 +185,26 @@ let result (mat,pla) =
 	|Comput -> (match find_cell mat (fun c -> c = 'w')  with
 			|None -> Some (Win(Comput))
 			|Some x -> None)*)
+
 (* This type was given in game.mli.
  * We have to repeat it here. *)
 type comparison = Equal | Greater | Smaller
 
 let compare player r1 r2 = 
-	let other_player = match player with 
-				|Human -> Comput 
-				|Comput -> Human in 
-	
-	(if r1 = r2 then Equal 
-	else if ((r2 = Win(player)) || (r2 = Even && r1 = Win(other_player))) then Greater
-	else Smaller)
-	
+	if r1 = r2 then Equal 
+	else if (r2 = Win(player)) || (r2 = Even && r1 = Win(next player)) then Greater
+	else Smaller
+
 (* val worst_for: player -> result *)
 let worst_for player = 
 	match player with 
 	|Human -> Win(Comput)
   	|Comput -> Win(Human)
-  
+ 
+ let best_for player = 
+	match player with 
+	|Human -> Win(Human)
+  	|Comput -> Win(Comput)
+
+  let even = Even 
+ 

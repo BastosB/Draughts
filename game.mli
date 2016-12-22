@@ -44,8 +44,6 @@ val initial: state
 (* Indicates which player must play now, in the current state. *)
 val turn: state -> player
 
-val nextPlayer: state -> player
-
 (* Indicates if a move is valid in the current state. *)
 val is_valid: state -> move -> bool
 
@@ -84,4 +82,9 @@ val compare: player -> result -> result -> comparison
  * Returns the worst possible result for the given player. Useful for computing min or max.
  * The worst for Human is supposed to be the best for Comput, and conversely. *)
 val worst_for: player -> result
+
+val best_for: player -> result
+
+val even: result
+
   
