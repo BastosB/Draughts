@@ -1,4 +1,5 @@
 open Gamebase
+open Graphics
 
 (*** Abstract representation of a two-player game.
  *
@@ -39,7 +40,14 @@ val result2s: result -> string
 val readmove: string -> move option
 
 (* Initial state, when the game starts. *)
-val initial: state
+val initial3: state
+val initial4: state
+val initial5: state
+val initial6: state
+val initial7: state
+val initial8: state
+val initial9: state
+val initial10: state
 
 (* Indicates which player must play now, in the current state. *)
 val turn: state -> player
@@ -85,6 +93,14 @@ val worst_for: player -> result
 
 val best_for: player -> result
 
-val even: result
+val draw_damier : state -> unit
 
-  
+val readsize : string -> int option
+
+val size_square : int 
+
+val event_list : event list 
+
+val get_move : state -> move
+
+ val draw_move : state -> move -> unit

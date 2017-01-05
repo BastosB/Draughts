@@ -1,1 +1,1 @@
-game_ia.ml: Game Hashtbl List Printf
+game_ia.ml: Functory Game Hashtbl List Printf Unix

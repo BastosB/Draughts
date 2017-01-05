@@ -46,7 +46,7 @@ let rec best_move state =
       match (compare player acu_r map_r) with 
       |Smaller -> (acu_m,acu_r)
       |Equal ->  (map_m,map_r)
-      |Greater -> (map_m,map_r)
+      |Greater -> (map_m,map_r) ;;
 
   (* C'est ma fonction map *)
   let compute_all state move =
@@ -54,32 +54,9 @@ let rec best_move state =
         |Some x ->  assert false (* On ne doit jamais arriver ici, car cette fonction est toujours appelée après une vérification de l'état.*)
         |None -> match best_move (play state move) with 
                   | (Some x, res) -> (Some move, res)
-                  | (None, res) -> (Some move, res)
+                  | (None, res) -> (Some move, res) ;; 
 
 
 let divide state = 
   let moves_list = (List.filter (is_valid state) (all_moves state)) in 
-    (*val map_fold_ac : compute_all:(move -> move option * result) -> find_max_acu:(move option * result -> move option * result -> move option * result) -> move option * result -> move list -> move option * result  *)
-    (*val map_fold_ac : f:('a -> 'b) -> fold:('b -> 'b -> 'b) -> 'b -> 'a list -> 'b  *)
-    map_fold_ac ~f:(compute_all state) ~fold:(find_max_acu (turn state)) (None,even) moves_list ;; 
-
-
-
-
-  (* Declare machines as workers. 
-  * You have to launch the current program (in worker mode) on these machines by yourself. *)
-  (*declare_workers ~n:2 "192.168.1.141" ;
-  declare_workers ~n:2 "localhost" ;*)
-
-
-(* 
-let rec best_move state =
-    match (result state) with (* result state renvoie le résultat du game*)
-        |Some x -> (None, x) (* x a gagné, on renvoie None (move) et x (le nom du vainqueur) *)
-        |None -> if all_moves state = [] then failwith "Empty list in best_move" 
-            else 
-              let (a,c) = find_max (turn state) (List.map (fun x-> (x, (match cache best_move (play state x) with 
-                                                                        |(Some m, r) -> r
-                                                                        |(None, r) -> r) ) ) (List.filter (is_valid state) (all_moves state)) ) ; 
-
-              in (Some(a),c) ;  *)
+    map_fold_ac ~f:(compute_all state) ~fold:(find_max_acu (turn state)) (None,(worst_for (turn state))) moves_list ;; 

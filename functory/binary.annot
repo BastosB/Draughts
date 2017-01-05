@@ -1,0 +1,1388 @@
+"binary.ml" 35 2197 2201 "binary.ml" 35 2197 2209
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  def buf_int8 "binary.ml" 38 2268 2268 "binary.ml" 1 0 -1
+)
+"binary.ml" 35 2197 2210 "binary.ml" 35 2197 2213
+type(
+  Buffer.t
+)
+ident(
+  def buf "binary.ml" 35 2197 2214 "binary.ml" 36 2218 2266
+)
+"binary.ml" 35 2197 2214 "binary.ml" 35 2197 2215
+type(
+  int
+)
+ident(
+  def i "binary.ml" 36 2218 2220 "binary.ml" 36 2218 2266
+)
+"binary.ml" 36 2218 2220 "binary.ml" 36 2218 2235
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"binary.ml" 36 2218 2236 "binary.ml" 36 2218 2239
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 35 2197 2210 "binary.ml" 35 2197 2213
+)
+"binary.ml" 36 2218 2241 "binary.ml" 36 2218 2252
+type(
+  int -> char
+)
+ident(
+  ext_ref Pervasives.char_of_int
+)
+"binary.ml" 36 2218 2254 "binary.ml" 36 2218 2255
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 35 2197 2214 "binary.ml" 35 2197 2215
+)
+"binary.ml" 36 2218 2256 "binary.ml" 36 2218 2260
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"binary.ml" 36 2218 2261 "binary.ml" 36 2218 2264
+type(
+  int
+)
+"binary.ml" 36 2218 2253 "binary.ml" 36 2218 2265
+type(
+  int
+)
+"binary.ml" 36 2218 2240 "binary.ml" 36 2218 2266
+call(
+  stack
+)
+type(
+  char
+)
+"binary.ml" 36 2218 2220 "binary.ml" 36 2218 2266
+call(
+  tail
+)
+type(
+  unit
+)
+"binary.ml" 38 2268 2272 "binary.ml" 38 2268 2281
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  def buf_int31 "binary.ml" 45 2450 2450 "binary.ml" 1 0 -1
+)
+"binary.ml" 38 2268 2282 "binary.ml" 38 2268 2285
+type(
+  Buffer.t
+)
+ident(
+  def buf "binary.ml" 38 2268 2286 "binary.ml" 43 2423 2448
+)
+"binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+type(
+  int
+)
+ident(
+  def i "binary.ml" 39 2291 2293 "binary.ml" 43 2423 2448
+)
+"binary.ml" 39 2291 2296 "binary.ml" 39 2291 2297
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+)
+"binary.ml" 39 2291 2298 "binary.ml" 39 2291 2299
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"binary.ml" 39 2291 2300 "binary.ml" 39 2291 2301
+type(
+  int
+)
+"binary.ml" 39 2291 2296 "binary.ml" 39 2291 2301
+type(
+  bool
+)
+"binary.ml" 39 2291 2307 "binary.ml" 39 2291 2318
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"binary.ml" 39 2291 2319 "binary.ml" 39 2291 2349
+type(
+  string
+)
+"binary.ml" 39 2291 2307 "binary.ml" 39 2291 2349
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 39 2291 2293 "binary.ml" 39 2291 2349
+type(
+  unit
+)
+"binary.ml" 40 2351 2353 "binary.ml" 40 2351 2361
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int8 "binary.ml" 35 2197 2201 "binary.ml" 35 2197 2209
+)
+"binary.ml" 40 2351 2362 "binary.ml" 40 2351 2365
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 38 2268 2282 "binary.ml" 38 2268 2285
+)
+"binary.ml" 40 2351 2366 "binary.ml" 40 2351 2367
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+)
+"binary.ml" 40 2351 2353 "binary.ml" 40 2351 2367
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 41 2369 2371 "binary.ml" 41 2369 2379
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int8 "binary.ml" 35 2197 2201 "binary.ml" 35 2197 2209
+)
+"binary.ml" 41 2369 2380 "binary.ml" 41 2369 2383
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 38 2268 2282 "binary.ml" 38 2268 2285
+)
+"binary.ml" 41 2369 2385 "binary.ml" 41 2369 2386
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+)
+"binary.ml" 41 2369 2387 "binary.ml" 41 2369 2390
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsr )
+)
+"binary.ml" 41 2369 2391 "binary.ml" 41 2369 2392
+type(
+  int
+)
+"binary.ml" 41 2369 2384 "binary.ml" 41 2369 2393
+type(
+  int
+)
+"binary.ml" 41 2369 2371 "binary.ml" 41 2369 2393
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 42 2395 2397 "binary.ml" 42 2395 2405
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int8 "binary.ml" 35 2197 2201 "binary.ml" 35 2197 2209
+)
+"binary.ml" 42 2395 2406 "binary.ml" 42 2395 2409
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 38 2268 2282 "binary.ml" 38 2268 2285
+)
+"binary.ml" 42 2395 2411 "binary.ml" 42 2395 2412
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+)
+"binary.ml" 42 2395 2413 "binary.ml" 42 2395 2416
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsr )
+)
+"binary.ml" 42 2395 2417 "binary.ml" 42 2395 2419
+type(
+  int
+)
+"binary.ml" 42 2395 2410 "binary.ml" 42 2395 2420
+type(
+  int
+)
+"binary.ml" 42 2395 2397 "binary.ml" 42 2395 2420
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 43 2423 2425 "binary.ml" 43 2423 2433
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int8 "binary.ml" 35 2197 2201 "binary.ml" 35 2197 2209
+)
+"binary.ml" 43 2423 2434 "binary.ml" 43 2423 2437
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 38 2268 2282 "binary.ml" 38 2268 2285
+)
+"binary.ml" 43 2423 2439 "binary.ml" 43 2423 2440
+type(
+  int
+)
+ident(
+  int_ref i "binary.ml" 38 2268 2286 "binary.ml" 38 2268 2287
+)
+"binary.ml" 43 2423 2441 "binary.ml" 43 2423 2444
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsr )
+)
+"binary.ml" 43 2423 2445 "binary.ml" 43 2423 2447
+type(
+  int
+)
+"binary.ml" 43 2423 2438 "binary.ml" 43 2423 2448
+type(
+  int
+)
+"binary.ml" 43 2423 2425 "binary.ml" 43 2423 2448
+call(
+  tail
+)
+type(
+  unit
+)
+"binary.ml" 42 2395 2397 "binary.ml" 43 2423 2448
+type(
+  unit
+)
+"binary.ml" 41 2369 2371 "binary.ml" 43 2423 2448
+type(
+  unit
+)
+"binary.ml" 40 2351 2353 "binary.ml" 43 2423 2448
+type(
+  unit
+)
+"binary.ml" 39 2291 2293 "binary.ml" 43 2423 2448
+type(
+  unit
+)
+"binary.ml" 45 2450 2454 "binary.ml" 45 2450 2464
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  def buf_string "binary.ml" 49 2535 2535 "binary.ml" 1 0 -1
+)
+"binary.ml" 45 2450 2465 "binary.ml" 45 2450 2468
+type(
+  Buffer.t
+)
+ident(
+  def buf "binary.ml" 45 2450 2469 "binary.ml" 47 2508 2533
+)
+"binary.ml" 45 2450 2469 "binary.ml" 45 2450 2470
+type(
+  string
+)
+ident(
+  def s "binary.ml" 46 2473 2475 "binary.ml" 47 2508 2533
+)
+"binary.ml" 46 2473 2475 "binary.ml" 46 2473 2484
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int31 "binary.ml" 38 2268 2272 "binary.ml" 38 2268 2281
+)
+"binary.ml" 46 2473 2485 "binary.ml" 46 2473 2488
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 45 2450 2465 "binary.ml" 45 2450 2468
+)
+"binary.ml" 46 2473 2490 "binary.ml" 46 2473 2503
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"binary.ml" 46 2473 2504 "binary.ml" 46 2473 2505
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 45 2450 2469 "binary.ml" 45 2450 2470
+)
+"binary.ml" 46 2473 2489 "binary.ml" 46 2473 2506
+type(
+  int
+)
+"binary.ml" 46 2473 2475 "binary.ml" 46 2473 2506
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 47 2508 2510 "binary.ml" 47 2508 2527
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"binary.ml" 47 2508 2528 "binary.ml" 47 2508 2531
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 45 2450 2465 "binary.ml" 45 2450 2468
+)
+"binary.ml" 47 2508 2532 "binary.ml" 47 2508 2533
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 45 2450 2469 "binary.ml" 45 2450 2470
+)
+"binary.ml" 47 2508 2510 "binary.ml" 47 2508 2533
+call(
+  tail
+)
+type(
+  unit
+)
+"binary.ml" 46 2473 2475 "binary.ml" 47 2508 2533
+type(
+  unit
+)
+"binary.ml" 49 2535 2539 "binary.ml" 49 2535 2554
+type(
+  Buffer.t -> string list -> unit
+)
+ident(
+  def buf_string_list "binary.ml" 55 2644 2644 "binary.ml" 1 0 -1
+)
+"binary.ml" 49 2535 2555 "binary.ml" 49 2535 2558
+type(
+  Buffer.t
+)
+ident(
+  def buf "binary.ml" 49 2535 2559 "binary.ml" 51 2596 2626
+)
+"binary.ml" 49 2535 2559 "binary.ml" 49 2535 2560
+type(
+  string list
+)
+ident(
+  def l "binary.ml" 50 2563 2565 "binary.ml" 51 2596 2626
+)
+"binary.ml" 50 2563 2565 "binary.ml" 50 2563 2574
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref buf_int31 "binary.ml" 38 2268 2272 "binary.ml" 38 2268 2281
+)
+"binary.ml" 50 2563 2575 "binary.ml" 50 2563 2578
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 49 2535 2555 "binary.ml" 49 2535 2558
+)
+"binary.ml" 50 2563 2580 "binary.ml" 50 2563 2591
+type(
+  string list -> int
+)
+ident(
+  ext_ref List.length
+)
+"binary.ml" 50 2563 2592 "binary.ml" 50 2563 2593
+type(
+  string list
+)
+ident(
+  int_ref l "binary.ml" 49 2535 2559 "binary.ml" 49 2535 2560
+)
+"binary.ml" 50 2563 2579 "binary.ml" 50 2563 2594
+call(
+  stack
+)
+type(
+  int
+)
+"binary.ml" 50 2563 2565 "binary.ml" 50 2563 2594
+call(
+  stack
+)
+type(
+  unit
+)
+"binary.ml" 51 2596 2598 "binary.ml" 51 2596 2607
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"binary.ml" 51 2596 2609 "binary.ml" 51 2596 2619
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref buf_string "binary.ml" 45 2450 2454 "binary.ml" 45 2450 2464
+)
+"binary.ml" 51 2596 2620 "binary.ml" 51 2596 2623
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "binary.ml" 49 2535 2555 "binary.ml" 49 2535 2558
+)
+"binary.ml" 51 2596 2608 "binary.ml" 51 2596 2624
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"binary.ml" 51 2596 2625 "binary.ml" 51 2596 2626
+type(
+  string list
+)
+ident(
+  int_ref l "binary.ml" 49 2535 2559 "binary.ml" 49 2535 2560
+)
+"binary.ml" 51 2596 2598 "binary.ml" 51 2596 2626
+call(
+  tail
+)
+type(
+  unit
+)
+"binary.ml" 50 2563 2565 "binary.ml" 51 2596 2626
+type(
+  unit
+)
+"binary.ml" 57 2673 2677 "binary.ml" 57 2673 2686
+type(
+  string -> int -> int * int
+)
+ident(
+  def get_uint8 "binary.ml" 60 2726 2726 "binary.ml" 1 0 -1
+)
+"binary.ml" 57 2673 2687 "binary.ml" 57 2673 2688
+type(
+  string
+)
+ident(
+  def s "binary.ml" 57 2673 2689 "binary.ml" 58 2696 2724
+)
+"binary.ml" 57 2673 2689 "binary.ml" 57 2673 2692
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 58 2696 2698 "binary.ml" 58 2696 2724
+)
+"binary.ml" 58 2696 2698 "binary.ml" 58 2696 2709
+type(
+  char -> int
+)
+ident(
+  ext_ref Pervasives.int_of_char
+)
+"binary.ml" 58 2696 2710 "binary.ml" 58 2696 2711
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 57 2673 2687 "binary.ml" 57 2673 2688
+)
+"binary.ml" 58 2696 2713 "binary.ml" 58 2696 2716
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 57 2673 2689 "binary.ml" 57 2673 2692
+)
+"binary.ml" 58 2696 2710 "binary.ml" 58 2696 2717
+type(
+  char
+)
+"binary.ml" 58 2696 2698 "binary.ml" 58 2696 2717
+type(
+  int
+)
+"binary.ml" 58 2696 2719 "binary.ml" 58 2696 2722
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 57 2673 2689 "binary.ml" 57 2673 2692
+)
+"binary.ml" 58 2696 2722 "binary.ml" 58 2696 2723
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"binary.ml" 58 2696 2723 "binary.ml" 58 2696 2724
+type(
+  int
+)
+"binary.ml" 58 2696 2719 "binary.ml" 58 2696 2724
+type(
+  int
+)
+"binary.ml" 58 2696 2698 "binary.ml" 58 2696 2724
+type(
+  int * int
+)
+"binary.ml" 60 2726 2730 "binary.ml" 60 2726 2739
+type(
+  string -> int -> int * int
+)
+ident(
+  def get_int31 "binary.ml" 68 2961 2961 "binary.ml" 1 0 -1
+)
+"binary.ml" 60 2726 2740 "binary.ml" 60 2726 2741
+type(
+  string
+)
+ident(
+  def s "binary.ml" 60 2726 2742 "binary.ml" 66 2951 2959
+)
+"binary.ml" 60 2726 2742 "binary.ml" 60 2726 2745
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 61 2748 2750 "binary.ml" 66 2951 2959
+)
+"binary.ml" 61 2748 2754 "binary.ml" 61 2748 2756
+type(
+  int
+)
+ident(
+  def c1 "binary.ml" 62 2783 2785 "binary.ml" 66 2951 2959
+)
+"binary.ml" 61 2748 2758 "binary.ml" 61 2748 2761
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 62 2783 2785 "binary.ml" 66 2951 2959
+)
+"binary.ml" 61 2748 2754 "binary.ml" 61 2748 2761
+type(
+  int * int
+)
+"binary.ml" 61 2748 2764 "binary.ml" 61 2748 2773
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_uint8 "binary.ml" 57 2673 2677 "binary.ml" 57 2673 2686
+)
+"binary.ml" 61 2748 2774 "binary.ml" 61 2748 2775
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 60 2726 2740 "binary.ml" 60 2726 2741
+)
+"binary.ml" 61 2748 2776 "binary.ml" 61 2748 2779
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 60 2726 2742 "binary.ml" 60 2726 2745
+)
+"binary.ml" 61 2748 2764 "binary.ml" 61 2748 2779
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 62 2783 2789 "binary.ml" 62 2783 2791
+type(
+  int
+)
+ident(
+  def c2 "binary.ml" 63 2818 2820 "binary.ml" 66 2951 2959
+)
+"binary.ml" 62 2783 2793 "binary.ml" 62 2783 2796
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 63 2818 2820 "binary.ml" 66 2951 2959
+)
+"binary.ml" 62 2783 2789 "binary.ml" 62 2783 2796
+type(
+  int * int
+)
+"binary.ml" 62 2783 2799 "binary.ml" 62 2783 2808
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_uint8 "binary.ml" 57 2673 2677 "binary.ml" 57 2673 2686
+)
+"binary.ml" 62 2783 2809 "binary.ml" 62 2783 2810
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 60 2726 2740 "binary.ml" 60 2726 2741
+)
+"binary.ml" 62 2783 2811 "binary.ml" 62 2783 2814
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 61 2748 2758 "binary.ml" 61 2748 2761
+)
+"binary.ml" 62 2783 2799 "binary.ml" 62 2783 2814
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 63 2818 2824 "binary.ml" 63 2818 2826
+type(
+  int
+)
+ident(
+  def c3 "binary.ml" 64 2853 2855 "binary.ml" 66 2951 2959
+)
+"binary.ml" 63 2818 2828 "binary.ml" 63 2818 2831
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 64 2853 2855 "binary.ml" 66 2951 2959
+)
+"binary.ml" 63 2818 2824 "binary.ml" 63 2818 2831
+type(
+  int * int
+)
+"binary.ml" 63 2818 2834 "binary.ml" 63 2818 2843
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_uint8 "binary.ml" 57 2673 2677 "binary.ml" 57 2673 2686
+)
+"binary.ml" 63 2818 2844 "binary.ml" 63 2818 2845
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 60 2726 2740 "binary.ml" 60 2726 2741
+)
+"binary.ml" 63 2818 2846 "binary.ml" 63 2818 2849
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 62 2783 2793 "binary.ml" 62 2783 2796
+)
+"binary.ml" 63 2818 2834 "binary.ml" 63 2818 2849
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 64 2853 2859 "binary.ml" 64 2853 2861
+type(
+  int
+)
+ident(
+  def c4 "binary.ml" 65 2888 2890 "binary.ml" 66 2951 2959
+)
+"binary.ml" 64 2853 2863 "binary.ml" 64 2853 2866
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 65 2888 2890 "binary.ml" 66 2951 2959
+)
+"binary.ml" 64 2853 2859 "binary.ml" 64 2853 2866
+type(
+  int * int
+)
+"binary.ml" 64 2853 2869 "binary.ml" 64 2853 2878
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_uint8 "binary.ml" 57 2673 2677 "binary.ml" 57 2673 2686
+)
+"binary.ml" 64 2853 2879 "binary.ml" 64 2853 2880
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 60 2726 2740 "binary.ml" 60 2726 2741
+)
+"binary.ml" 64 2853 2881 "binary.ml" 64 2853 2884
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 63 2818 2828 "binary.ml" 63 2818 2831
+)
+"binary.ml" 64 2853 2869 "binary.ml" 64 2853 2884
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 65 2888 2894 "binary.ml" 65 2888 2895
+type(
+  int
+)
+ident(
+  def x "binary.ml" 66 2951 2953 "binary.ml" 66 2951 2959
+)
+"binary.ml" 65 2888 2898 "binary.ml" 65 2888 2900
+type(
+  int
+)
+ident(
+  int_ref c1 "binary.ml" 61 2748 2754 "binary.ml" 61 2748 2756
+)
+"binary.ml" 65 2888 2901 "binary.ml" 65 2888 2904
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"binary.ml" 65 2888 2906 "binary.ml" 65 2888 2908
+type(
+  int
+)
+ident(
+  int_ref c2 "binary.ml" 62 2783 2789 "binary.ml" 62 2783 2791
+)
+"binary.ml" 65 2888 2909 "binary.ml" 65 2888 2912
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"binary.ml" 65 2888 2913 "binary.ml" 65 2888 2914
+type(
+  int
+)
+"binary.ml" 65 2888 2905 "binary.ml" 65 2888 2915
+type(
+  int
+)
+"binary.ml" 65 2888 2898 "binary.ml" 65 2888 2915
+type(
+  int
+)
+"binary.ml" 65 2888 2916 "binary.ml" 65 2888 2919
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"binary.ml" 65 2888 2921 "binary.ml" 65 2888 2923
+type(
+  int
+)
+ident(
+  int_ref c3 "binary.ml" 63 2818 2824 "binary.ml" 63 2818 2826
+)
+"binary.ml" 65 2888 2924 "binary.ml" 65 2888 2927
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"binary.ml" 65 2888 2928 "binary.ml" 65 2888 2930
+type(
+  int
+)
+"binary.ml" 65 2888 2920 "binary.ml" 65 2888 2931
+type(
+  int
+)
+"binary.ml" 65 2888 2898 "binary.ml" 65 2888 2931
+type(
+  int
+)
+"binary.ml" 65 2888 2932 "binary.ml" 65 2888 2935
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"binary.ml" 65 2888 2937 "binary.ml" 65 2888 2939
+type(
+  int
+)
+ident(
+  int_ref c4 "binary.ml" 64 2853 2859 "binary.ml" 64 2853 2861
+)
+"binary.ml" 65 2888 2940 "binary.ml" 65 2888 2943
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"binary.ml" 65 2888 2944 "binary.ml" 65 2888 2946
+type(
+  int
+)
+"binary.ml" 65 2888 2936 "binary.ml" 65 2888 2947
+type(
+  int
+)
+"binary.ml" 65 2888 2898 "binary.ml" 65 2888 2947
+type(
+  int
+)
+"binary.ml" 66 2951 2953 "binary.ml" 66 2951 2954
+type(
+  int
+)
+ident(
+  int_ref x "binary.ml" 65 2888 2894 "binary.ml" 65 2888 2895
+)
+"binary.ml" 66 2951 2956 "binary.ml" 66 2951 2959
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 64 2853 2863 "binary.ml" 64 2853 2866
+)
+"binary.ml" 66 2951 2953 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 65 2888 2890 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 64 2853 2855 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 63 2818 2820 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 62 2783 2785 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 61 2748 2750 "binary.ml" 66 2951 2959
+type(
+  int * int
+)
+"binary.ml" 68 2961 2965 "binary.ml" 68 2961 2975
+type(
+  string -> int -> string * int
+)
+ident(
+  def get_string "binary.ml" 72 3053 3053 "binary.ml" 1 0 -1
+)
+"binary.ml" 68 2961 2976 "binary.ml" 68 2961 2977
+type(
+  string
+)
+ident(
+  def s "binary.ml" 68 2961 2978 "binary.ml" 70 3020 3051
+)
+"binary.ml" 68 2961 2978 "binary.ml" 68 2961 2981
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 69 2984 2986 "binary.ml" 70 3020 3051
+)
+"binary.ml" 69 2984 2990 "binary.ml" 69 2984 2993
+type(
+  int
+)
+ident(
+  def len "binary.ml" 70 3020 3022 "binary.ml" 70 3020 3051
+)
+"binary.ml" 69 2984 2995 "binary.ml" 69 2984 2998
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 70 3020 3022 "binary.ml" 70 3020 3051
+)
+"binary.ml" 69 2984 2990 "binary.ml" 69 2984 2998
+type(
+  int * int
+)
+"binary.ml" 69 2984 3001 "binary.ml" 69 2984 3010
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_int31 "binary.ml" 60 2726 2730 "binary.ml" 60 2726 2739
+)
+"binary.ml" 69 2984 3011 "binary.ml" 69 2984 3012
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 68 2961 2976 "binary.ml" 68 2961 2977
+)
+"binary.ml" 69 2984 3013 "binary.ml" 69 2984 3016
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 68 2961 2978 "binary.ml" 68 2961 2981
+)
+"binary.ml" 69 2984 3001 "binary.ml" 69 2984 3016
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 70 3020 3022 "binary.ml" 70 3020 3032
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"binary.ml" 70 3020 3033 "binary.ml" 70 3020 3034
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 68 2961 2976 "binary.ml" 68 2961 2977
+)
+"binary.ml" 70 3020 3035 "binary.ml" 70 3020 3038
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 69 2984 2995 "binary.ml" 69 2984 2998
+)
+"binary.ml" 70 3020 3039 "binary.ml" 70 3020 3042
+type(
+  int
+)
+ident(
+  int_ref len "binary.ml" 69 2984 2990 "binary.ml" 69 2984 2993
+)
+"binary.ml" 70 3020 3022 "binary.ml" 70 3020 3042
+call(
+  stack
+)
+type(
+  string
+)
+"binary.ml" 70 3020 3044 "binary.ml" 70 3020 3047
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 69 2984 2995 "binary.ml" 69 2984 2998
+)
+"binary.ml" 70 3020 3047 "binary.ml" 70 3020 3048
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"binary.ml" 70 3020 3048 "binary.ml" 70 3020 3051
+type(
+  int
+)
+ident(
+  int_ref len "binary.ml" 69 2984 2990 "binary.ml" 69 2984 2993
+)
+"binary.ml" 70 3020 3044 "binary.ml" 70 3020 3051
+type(
+  int
+)
+"binary.ml" 70 3020 3022 "binary.ml" 70 3020 3051
+type(
+  string * int
+)
+"binary.ml" 69 2984 2986 "binary.ml" 70 3020 3051
+type(
+  string * int
+)
+"binary.ml" 72 3053 3057 "binary.ml" 72 3053 3072
+type(
+  string -> int -> string list * int
+)
+ident(
+  def get_string_list "binary.ml" 81 3275 3292 "binary.ml" 1 0 -1
+)
+"binary.ml" 72 3053 3073 "binary.ml" 72 3053 3074
+type(
+  string
+)
+ident(
+  def s "binary.ml" 72 3053 3075 "binary.ml" 81 3275 3292
+)
+"binary.ml" 72 3053 3075 "binary.ml" 72 3053 3078
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 73 3081 3083 "binary.ml" 81 3275 3292
+)
+"binary.ml" 73 3081 3087 "binary.ml" 73 3081 3090
+type(
+  int
+)
+ident(
+  def len "binary.ml" 74 3117 3119 "binary.ml" 81 3275 3292
+)
+"binary.ml" 73 3081 3092 "binary.ml" 73 3081 3095
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 74 3117 3119 "binary.ml" 81 3275 3292
+)
+"binary.ml" 73 3081 3087 "binary.ml" 73 3081 3095
+type(
+  int * int
+)
+"binary.ml" 73 3081 3098 "binary.ml" 73 3081 3107
+type(
+  string -> int -> int * int
+)
+ident(
+  int_ref get_int31 "binary.ml" 60 2726 2730 "binary.ml" 60 2726 2739
+)
+"binary.ml" 73 3081 3108 "binary.ml" 73 3081 3109
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 72 3053 3073 "binary.ml" 72 3053 3074
+)
+"binary.ml" 73 3081 3110 "binary.ml" 73 3081 3113
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 72 3053 3075 "binary.ml" 72 3053 3078
+)
+"binary.ml" 73 3081 3098 "binary.ml" 73 3081 3113
+call(
+  stack
+)
+type(
+  int * int
+)
+"binary.ml" 74 3117 3127 "binary.ml" 74 3117 3131
+type(
+  string list -> int -> int -> string list * int
+)
+ident(
+  def read "binary.ml" 74 3117 3119 "binary.ml" 81 3275 3292
+)
+"binary.ml" 74 3117 3132 "binary.ml" 74 3117 3135
+type(
+  string list
+)
+ident(
+  def acc "binary.ml" 74 3117 3136 "binary.ml" 79 3236 3269
+)
+"binary.ml" 74 3117 3136 "binary.ml" 74 3117 3139
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 74 3117 3140 "binary.ml" 79 3236 3269
+)
+"binary.ml" 74 3117 3140 "binary.ml" 74 3117 3141
+type(
+  int
+)
+ident(
+  def n "binary.ml" 75 3145 3149 "binary.ml" 79 3236 3269
+)
+"binary.ml" 75 3145 3152 "binary.ml" 75 3145 3153
+type(
+  int
+)
+ident(
+  int_ref n "binary.ml" 74 3117 3140 "binary.ml" 74 3117 3141
+)
+"binary.ml" 75 3145 3154 "binary.ml" 75 3145 3155
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"binary.ml" 75 3145 3156 "binary.ml" 75 3145 3157
+type(
+  int
+)
+"binary.ml" 75 3145 3152 "binary.ml" 75 3145 3157
+type(
+  bool
+)
+"binary.ml" 76 3163 3169 "binary.ml" 76 3163 3177
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"binary.ml" 76 3163 3178 "binary.ml" 76 3163 3181
+type(
+  string list
+)
+ident(
+  int_ref acc "binary.ml" 74 3117 3132 "binary.ml" 74 3117 3135
+)
+"binary.ml" 76 3163 3169 "binary.ml" 76 3163 3181
+call(
+  stack
+)
+type(
+  string list
+)
+"binary.ml" 76 3163 3183 "binary.ml" 76 3163 3186
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 74 3117 3136 "binary.ml" 74 3117 3139
+)
+"binary.ml" 76 3163 3169 "binary.ml" 76 3163 3186
+type(
+  string list * int
+)
+"binary.ml" 78 3197 3207 "binary.ml" 78 3197 3208
+type(
+  string
+)
+ident(
+  def s "binary.ml" 79 3236 3242 "binary.ml" 79 3236 3269
+)
+"binary.ml" 78 3197 3210 "binary.ml" 78 3197 3213
+type(
+  int
+)
+ident(
+  def pos "binary.ml" 79 3236 3242 "binary.ml" 79 3236 3269
+)
+"binary.ml" 78 3197 3207 "binary.ml" 78 3197 3213
+type(
+  string * int
+)
+"binary.ml" 78 3197 3216 "binary.ml" 78 3197 3226
+type(
+  string -> int -> string * int
+)
+ident(
+  int_ref get_string "binary.ml" 68 2961 2965 "binary.ml" 68 2961 2975
+)
+"binary.ml" 78 3197 3227 "binary.ml" 78 3197 3228
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 72 3053 3073 "binary.ml" 72 3053 3074
+)
+"binary.ml" 78 3197 3229 "binary.ml" 78 3197 3232
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 74 3117 3136 "binary.ml" 74 3117 3139
+)
+"binary.ml" 78 3197 3216 "binary.ml" 78 3197 3232
+call(
+  stack
+)
+type(
+  string * int
+)
+"binary.ml" 79 3236 3242 "binary.ml" 79 3236 3246
+type(
+  string list -> int -> int -> string list * int
+)
+ident(
+  int_ref read "binary.ml" 74 3117 3127 "binary.ml" 74 3117 3131
+)
+"binary.ml" 79 3236 3248 "binary.ml" 79 3236 3249
+type(
+  string
+)
+ident(
+  int_ref s "binary.ml" 78 3197 3207 "binary.ml" 78 3197 3208
+)
+"binary.ml" 79 3236 3253 "binary.ml" 79 3236 3256
+type(
+  string list
+)
+ident(
+  int_ref acc "binary.ml" 74 3117 3132 "binary.ml" 74 3117 3135
+)
+"binary.ml" 79 3236 3247 "binary.ml" 79 3236 3257
+type(
+  string list
+)
+"binary.ml" 79 3236 3258 "binary.ml" 79 3236 3261
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 78 3197 3210 "binary.ml" 78 3197 3213
+)
+"binary.ml" 79 3236 3263 "binary.ml" 79 3236 3264
+type(
+  int
+)
+ident(
+  int_ref n "binary.ml" 74 3117 3140 "binary.ml" 74 3117 3141
+)
+"binary.ml" 79 3236 3265 "binary.ml" 79 3236 3266
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"binary.ml" 79 3236 3267 "binary.ml" 79 3236 3268
+type(
+  int
+)
+"binary.ml" 79 3236 3262 "binary.ml" 79 3236 3269
+type(
+  int
+)
+"binary.ml" 79 3236 3242 "binary.ml" 79 3236 3269
+call(
+  tail
+)
+type(
+  string list * int
+)
+"binary.ml" 78 3197 3203 "binary.ml" 79 3236 3269
+type(
+  string list * int
+)
+"binary.ml" 75 3145 3149 "binary.ml" 79 3236 3269
+type(
+  string list * int
+)
+"binary.ml" 81 3275 3277 "binary.ml" 81 3275 3281
+type(
+  string list -> int -> int -> string list * int
+)
+ident(
+  int_ref read "binary.ml" 74 3117 3127 "binary.ml" 74 3117 3131
+)
+"binary.ml" 81 3275 3282 "binary.ml" 81 3275 3284
+type(
+  string list
+)
+"binary.ml" 81 3275 3285 "binary.ml" 81 3275 3288
+type(
+  int
+)
+ident(
+  int_ref pos "binary.ml" 73 3081 3092 "binary.ml" 73 3081 3095
+)
+"binary.ml" 81 3275 3289 "binary.ml" 81 3275 3292
+type(
+  int
+)
+ident(
+  int_ref len "binary.ml" 73 3081 3087 "binary.ml" 73 3081 3090
+)
+"binary.ml" 81 3275 3277 "binary.ml" 81 3275 3292
+call(
+  tail
+)
+type(
+  string list * int
+)
+"binary.ml" 74 3117 3119 "binary.ml" 81 3275 3292
+type(
+  string list * int
+)
+"binary.ml" 73 3081 3083 "binary.ml" 81 3275 3292
+type(
+  string list * int
+)

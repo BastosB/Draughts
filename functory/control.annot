@@ -1,0 +1,132 @@
+"control.ml" 17 1156 1160 "control.ml" 17 1156 1165
+type(
+  bool ref
+)
+ident(
+  def debug "control.ml" 19 1179 1179 "control.ml" 1 0 -1
+)
+"control.ml" 17 1156 1168 "control.ml" 17 1156 1171
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"control.ml" 17 1156 1172 "control.ml" 17 1156 1177
+type(
+  bool
+)
+"control.ml" 17 1156 1168 "control.ml" 17 1156 1177
+type(
+  bool ref
+)
+"control.ml" 19 1179 1183 "control.ml" 19 1179 1192
+type(
+  bool -> unit
+)
+ident(
+  def set_debug "control.ml" 21 1209 1209 "control.ml" 1 0 -1
+)
+"control.ml" 19 1179 1193 "control.ml" 19 1179 1194
+type(
+  bool
+)
+ident(
+  def b "control.ml" 19 1179 1197 "control.ml" 19 1179 1207
+)
+"control.ml" 19 1179 1197 "control.ml" 19 1179 1202
+type(
+  bool ref
+)
+ident(
+  int_ref debug "control.ml" 17 1156 1160 "control.ml" 17 1156 1165
+)
+"control.ml" 19 1179 1203 "control.ml" 19 1179 1205
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"control.ml" 19 1179 1206 "control.ml" 19 1179 1207
+type(
+  bool
+)
+ident(
+  int_ref b "control.ml" 19 1179 1193 "control.ml" 19 1179 1194
+)
+"control.ml" 19 1179 1197 "control.ml" 19 1179 1207
+type(
+  unit
+)
+"control.ml" 23 1222 1226 "control.ml" 23 1222 1233
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def dprintf "control.ml" 24 1238 1294 "control.ml" 1 0 -1
+)
+"control.ml" 23 1222 1234 "control.ml" 23 1222 1235
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def s "control.ml" 24 1238 1240 "control.ml" 24 1238 1294
+)
+"control.ml" 24 1238 1244 "control.ml" 24 1238 1245
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"control.ml" 24 1238 1245 "control.ml" 24 1238 1250
+type(
+  bool ref
+)
+ident(
+  int_ref debug "control.ml" 17 1156 1160 "control.ml" 17 1156 1165
+)
+"control.ml" 24 1238 1244 "control.ml" 24 1238 1250
+type(
+  bool
+)
+"control.ml" 24 1238 1256 "control.ml" 24 1238 1263
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"control.ml" 24 1238 1269 "control.ml" 24 1238 1277
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.ifprintf
+)
+"control.ml" 24 1238 1240 "control.ml" 24 1238 1278
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+"control.ml" 24 1238 1279 "control.ml" 24 1238 1292
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"control.ml" 24 1238 1293 "control.ml" 24 1238 1294
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref s "control.ml" 23 1222 1234 "control.ml" 23 1222 1235
+)
+"control.ml" 24 1238 1240 "control.ml" 24 1238 1294
+call(
+  tail
+)
+type(
+  'a
+)

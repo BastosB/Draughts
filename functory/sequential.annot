@@ -1,0 +1,921 @@
+"sequential.ml" 19 1190 1194 "sequential.ml" 19 1190 1197
+type(
+  f:('a -> 'b) -> 'a list -> 'b list
+)
+ident(
+  def map "sequential.ml" 21 1219 1219 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 19 1190 1199 "sequential.ml" 19 1190 1200
+type(
+  'a -> 'b
+)
+ident(
+  def f "sequential.ml" 19 1190 1201 "sequential.ml" 19 1190 1217
+)
+"sequential.ml" 19 1190 1201 "sequential.ml" 19 1190 1202
+type(
+  'a list
+)
+ident(
+  def l "sequential.ml" 19 1190 1205 "sequential.ml" 19 1190 1217
+)
+"sequential.ml" 19 1190 1205 "sequential.ml" 19 1190 1213
+type(
+  ('a -> 'b) -> 'a list -> 'b list
+)
+ident(
+  ext_ref List.map
+)
+"sequential.ml" 19 1190 1214 "sequential.ml" 19 1190 1215
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "sequential.ml" 19 1190 1199 "sequential.ml" 19 1190 1200
+)
+"sequential.ml" 19 1190 1216 "sequential.ml" 19 1190 1217
+type(
+  'a list
+)
+ident(
+  int_ref l "sequential.ml" 19 1190 1201 "sequential.ml" 19 1190 1202
+)
+"sequential.ml" 19 1190 1205 "sequential.ml" 19 1190 1217
+call(
+  tail
+)
+type(
+  'b list
+)
+"sequential.ml" 21 1219 1223 "sequential.ml" 21 1219 1237
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  def map_local_fold "sequential.ml" 24 1309 1309 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 21 1219 1239 "sequential.ml" 21 1219 1240
+type(
+  'a -> 'b
+)
+ident(
+  def f "sequential.ml" 21 1219 1241 "sequential.ml" 22 1255 1307
+)
+"sequential.ml" 21 1219 1242 "sequential.ml" 21 1219 1246
+type(
+  'c -> 'b -> 'c
+)
+ident(
+  def fold "sequential.ml" 21 1219 1247 "sequential.ml" 22 1255 1307
+)
+"sequential.ml" 21 1219 1247 "sequential.ml" 21 1219 1250
+type(
+  'c
+)
+ident(
+  def acc "sequential.ml" 21 1219 1251 "sequential.ml" 22 1255 1307
+)
+"sequential.ml" 21 1219 1251 "sequential.ml" 21 1219 1252
+type(
+  'a list
+)
+ident(
+  def l "sequential.ml" 22 1255 1257 "sequential.ml" 22 1255 1307
+)
+"sequential.ml" 22 1255 1257 "sequential.ml" 22 1255 1271
+type(
+  ('c -> 'a -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  ext_ref List.fold_left
+)
+"sequential.ml" 22 1255 1277 "sequential.ml" 22 1255 1280
+type(
+  'c
+)
+ident(
+  def acc "sequential.ml" 22 1255 1281 "sequential.ml" 22 1255 1300
+)
+"sequential.ml" 22 1255 1281 "sequential.ml" 22 1255 1282
+type(
+  'a
+)
+ident(
+  def x "sequential.ml" 22 1255 1286 "sequential.ml" 22 1255 1300
+)
+"sequential.ml" 22 1255 1286 "sequential.ml" 22 1255 1290
+type(
+  'c -> 'b -> 'c
+)
+ident(
+  int_ref fold "sequential.ml" 21 1219 1242 "sequential.ml" 21 1219 1246
+)
+"sequential.ml" 22 1255 1291 "sequential.ml" 22 1255 1294
+type(
+  'c
+)
+ident(
+  int_ref acc "sequential.ml" 22 1255 1277 "sequential.ml" 22 1255 1280
+)
+"sequential.ml" 22 1255 1296 "sequential.ml" 22 1255 1297
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "sequential.ml" 21 1219 1239 "sequential.ml" 21 1219 1240
+)
+"sequential.ml" 22 1255 1298 "sequential.ml" 22 1255 1299
+type(
+  'a
+)
+ident(
+  int_ref x "sequential.ml" 22 1255 1281 "sequential.ml" 22 1255 1282
+)
+"sequential.ml" 22 1255 1295 "sequential.ml" 22 1255 1300
+call(
+  stack
+)
+type(
+  'b
+)
+"sequential.ml" 22 1255 1286 "sequential.ml" 22 1255 1300
+call(
+  tail
+)
+type(
+  'c
+)
+"sequential.ml" 22 1255 1272 "sequential.ml" 22 1255 1301
+type(
+  'c -> 'a -> 'c
+)
+"sequential.ml" 22 1255 1302 "sequential.ml" 22 1255 1305
+type(
+  'c
+)
+ident(
+  int_ref acc "sequential.ml" 21 1219 1247 "sequential.ml" 21 1219 1250
+)
+"sequential.ml" 22 1255 1306 "sequential.ml" 22 1255 1307
+type(
+  'a list
+)
+ident(
+  int_ref l "sequential.ml" 21 1219 1251 "sequential.ml" 21 1219 1252
+)
+"sequential.ml" 22 1255 1257 "sequential.ml" 22 1255 1307
+call(
+  tail
+)
+type(
+  'c
+)
+"sequential.ml" 24 1309 1313 "sequential.ml" 24 1309 1328
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  def map_remote_fold "sequential.ml" 26 1347 1347 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 24 1309 1331 "sequential.ml" 24 1309 1345
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  int_ref map_local_fold "sequential.ml" 21 1219 1223 "sequential.ml" 21 1219 1237
+)
+"sequential.ml" 26 1347 1351 "sequential.ml" 26 1347 1362
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  def map_fold_ac "sequential.ml" 28 1381 1381 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 26 1347 1365 "sequential.ml" 26 1347 1379
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  int_ref map_local_fold "sequential.ml" 21 1219 1223 "sequential.ml" 21 1219 1237
+)
+"sequential.ml" 28 1381 1385 "sequential.ml" 28 1381 1395
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  def map_fold_a "sequential.ml" 30 1414 1414 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 28 1381 1398 "sequential.ml" 28 1381 1412
+type(
+  f:('a -> 'b) -> fold:('c -> 'b -> 'c) -> 'c -> 'a list -> 'c
+)
+ident(
+  int_ref map_local_fold "sequential.ml" 21 1219 1223 "sequential.ml" 21 1219 1237
+)
+"sequential.ml" 30 1414 1418 "sequential.ml" 30 1414 1428
+type(
+  map:('a -> ('b * 'c) list) ->
+  reduce:('b -> 'c list list -> 'd) -> 'a list -> ('b * 'd) list
+)
+ident(
+  def map_reduce "sequential.ml" 40 1727 1727 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 30 1414 1430 "sequential.ml" 30 1414 1433
+type(
+  'a -> ('b * 'c) list
+)
+ident(
+  def map "sequential.ml" 30 1414 1434 "sequential.ml" 37 1658 1724
+)
+"sequential.ml" 30 1414 1435 "sequential.ml" 30 1414 1441
+type(
+  'b -> 'c list list -> 'd
+)
+ident(
+  def reduce "sequential.ml" 30 1414 1442 "sequential.ml" 37 1658 1724
+)
+"sequential.ml" 30 1414 1442 "sequential.ml" 30 1414 1443
+type(
+  'a list
+)
+ident(
+  def l "sequential.ml" 31 1446 1448 "sequential.ml" 37 1658 1724
+)
+"sequential.ml" 31 1446 1452 "sequential.ml" 31 1446 1453
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+ident(
+  def h "sequential.ml" 32 1479 1481 "sequential.ml" 37 1658 1724
+)
+"sequential.ml" 31 1446 1456 "sequential.ml" 31 1446 1470
+type(
+  ?random:bool -> int -> ('b, 'c list list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"sequential.ml" 31 1446 1471 "sequential.ml" 31 1446 1475
+type(
+  int
+)
+"sequential.ml" 31 1446 1456 "sequential.ml" 31 1446 1475
+call(
+  stack
+)
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+"sequential.ml" 32 1479 1485 "sequential.ml" 32 1479 1488
+type(
+  'b * 'c -> unit
+)
+ident(
+  def add "sequential.ml" 36 1608 1610 "sequential.ml" 37 1658 1724
+)
+"sequential.ml" 32 1479 1490 "sequential.ml" 32 1479 1492
+type(
+  'b
+)
+ident(
+  def k2 "sequential.ml" 33 1500 1504 "sequential.ml" 34 1557 1602
+)
+"sequential.ml" 32 1479 1494 "sequential.ml" 32 1479 1496
+type(
+  'c
+)
+ident(
+  def v2 "sequential.ml" 33 1500 1504 "sequential.ml" 34 1557 1602
+)
+"sequential.ml" 32 1479 1489 "sequential.ml" 32 1479 1497
+type(
+  'b * 'c
+)
+"sequential.ml" 33 1500 1508 "sequential.ml" 33 1500 1523
+type(
+  ('b, 'c list list) Hashtbl.t -> 'b -> 'c list list -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"sequential.ml" 33 1500 1524 "sequential.ml" 33 1500 1525
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+ident(
+  int_ref h "sequential.ml" 31 1446 1452 "sequential.ml" 31 1446 1453
+)
+"sequential.ml" 33 1500 1526 "sequential.ml" 33 1500 1528
+type(
+  'b
+)
+ident(
+  int_ref k2 "sequential.ml" 32 1479 1490 "sequential.ml" 32 1479 1492
+)
+"sequential.ml" 33 1500 1531 "sequential.ml" 33 1500 1533
+type(
+  'c
+)
+ident(
+  int_ref v2 "sequential.ml" 32 1479 1494 "sequential.ml" 32 1479 1496
+)
+"sequential.ml" 33 1500 1530 "sequential.ml" 33 1500 1534
+type(
+  'c list
+)
+"sequential.ml" 33 1500 1538 "sequential.ml" 33 1500 1550
+type(
+  ('b, 'c list list) Hashtbl.t -> 'b -> 'c list list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"sequential.ml" 33 1500 1551 "sequential.ml" 33 1500 1552
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+ident(
+  int_ref h "sequential.ml" 31 1446 1452 "sequential.ml" 31 1446 1453
+)
+"sequential.ml" 33 1500 1553 "sequential.ml" 33 1500 1555
+type(
+  'b
+)
+ident(
+  int_ref k2 "sequential.ml" 32 1479 1490 "sequential.ml" 32 1479 1492
+)
+"sequential.ml" 33 1500 1538 "sequential.ml" 33 1500 1555
+call(
+  stack
+)
+type(
+  'c list list
+)
+"sequential.ml" 33 1500 1529 "sequential.ml" 33 1500 1556
+type(
+  'c list list
+)
+"sequential.ml" 33 1500 1508 "sequential.ml" 33 1500 1556
+call(
+  stack
+)
+type(
+  unit
+)
+"sequential.ml" 34 1557 1566 "sequential.ml" 34 1557 1575
+type(
+  exn
+)
+"sequential.ml" 34 1557 1579 "sequential.ml" 34 1557 1590
+type(
+  ('b, 'c list list) Hashtbl.t -> 'b -> 'c list list -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"sequential.ml" 34 1557 1591 "sequential.ml" 34 1557 1592
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+ident(
+  int_ref h "sequential.ml" 31 1446 1452 "sequential.ml" 31 1446 1453
+)
+"sequential.ml" 34 1557 1593 "sequential.ml" 34 1557 1595
+type(
+  'b
+)
+ident(
+  int_ref k2 "sequential.ml" 32 1479 1490 "sequential.ml" 32 1479 1492
+)
+"sequential.ml" 34 1557 1598 "sequential.ml" 34 1557 1600
+type(
+  'c
+)
+ident(
+  int_ref v2 "sequential.ml" 32 1479 1494 "sequential.ml" 32 1479 1496
+)
+"sequential.ml" 34 1557 1597 "sequential.ml" 34 1557 1601
+type(
+  'c list
+)
+"sequential.ml" 34 1557 1596 "sequential.ml" 34 1557 1602
+type(
+  'c list list
+)
+"sequential.ml" 34 1557 1579 "sequential.ml" 34 1557 1602
+call(
+  tail
+)
+type(
+  unit
+)
+"sequential.ml" 33 1500 1504 "sequential.ml" 34 1557 1602
+type(
+  unit
+)
+"sequential.ml" 36 1608 1610 "sequential.ml" 36 1608 1619
+type(
+  ('a -> unit) -> 'a list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sequential.ml" 36 1608 1625 "sequential.ml" 36 1608 1627
+type(
+  'a
+)
+ident(
+  def v1 "sequential.ml" 36 1608 1631 "sequential.ml" 36 1608 1653
+)
+"sequential.ml" 36 1608 1631 "sequential.ml" 36 1608 1640
+type(
+  ('b * 'c -> unit) -> ('b * 'c) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sequential.ml" 36 1608 1641 "sequential.ml" 36 1608 1644
+type(
+  'b * 'c -> unit
+)
+ident(
+  int_ref add "sequential.ml" 32 1479 1485 "sequential.ml" 32 1479 1488
+)
+"sequential.ml" 36 1608 1646 "sequential.ml" 36 1608 1649
+type(
+  'a -> ('b * 'c) list
+)
+ident(
+  int_ref map "sequential.ml" 30 1414 1430 "sequential.ml" 30 1414 1433
+)
+"sequential.ml" 36 1608 1650 "sequential.ml" 36 1608 1652
+type(
+  'a
+)
+ident(
+  int_ref v1 "sequential.ml" 36 1608 1625 "sequential.ml" 36 1608 1627
+)
+"sequential.ml" 36 1608 1645 "sequential.ml" 36 1608 1653
+call(
+  stack
+)
+type(
+  ('b * 'c) list
+)
+"sequential.ml" 36 1608 1631 "sequential.ml" 36 1608 1653
+call(
+  tail
+)
+type(
+  unit
+)
+"sequential.ml" 36 1608 1620 "sequential.ml" 36 1608 1654
+type(
+  'a -> unit
+)
+"sequential.ml" 36 1608 1655 "sequential.ml" 36 1608 1656
+type(
+  'a list
+)
+ident(
+  int_ref l "sequential.ml" 30 1414 1442 "sequential.ml" 30 1414 1443
+)
+"sequential.ml" 36 1608 1610 "sequential.ml" 36 1608 1656
+call(
+  stack
+)
+type(
+  unit
+)
+"sequential.ml" 37 1658 1660 "sequential.ml" 37 1658 1672
+type(
+  ('b -> 'c list list -> ('b * 'd) list -> ('b * 'd) list) ->
+  ('b, 'c list list) Hashtbl.t -> ('b * 'd) list -> ('b * 'd) list
+)
+ident(
+  ext_ref Hashtbl.fold
+)
+"sequential.ml" 37 1658 1678 "sequential.ml" 37 1658 1680
+type(
+  'b
+)
+ident(
+  def k2 "sequential.ml" 37 1658 1681 "sequential.ml" 37 1658 1718
+)
+"sequential.ml" 37 1658 1681 "sequential.ml" 37 1658 1684
+type(
+  'c list list
+)
+ident(
+  def v2l "sequential.ml" 37 1658 1685 "sequential.ml" 37 1658 1718
+)
+"sequential.ml" 37 1658 1685 "sequential.ml" 37 1658 1688
+type(
+  ('b * 'd) list
+)
+ident(
+  def res "sequential.ml" 37 1658 1692 "sequential.ml" 37 1658 1718
+)
+"sequential.ml" 37 1658 1693 "sequential.ml" 37 1658 1695
+type(
+  'b
+)
+ident(
+  int_ref k2 "sequential.ml" 37 1658 1678 "sequential.ml" 37 1658 1680
+)
+"sequential.ml" 37 1658 1697 "sequential.ml" 37 1658 1703
+type(
+  'b -> 'c list list -> 'd
+)
+ident(
+  int_ref reduce "sequential.ml" 30 1414 1435 "sequential.ml" 30 1414 1441
+)
+"sequential.ml" 37 1658 1704 "sequential.ml" 37 1658 1706
+type(
+  'b
+)
+ident(
+  int_ref k2 "sequential.ml" 37 1658 1678 "sequential.ml" 37 1658 1680
+)
+"sequential.ml" 37 1658 1707 "sequential.ml" 37 1658 1710
+type(
+  'c list list
+)
+ident(
+  int_ref v2l "sequential.ml" 37 1658 1681 "sequential.ml" 37 1658 1684
+)
+"sequential.ml" 37 1658 1697 "sequential.ml" 37 1658 1710
+call(
+  stack
+)
+type(
+  'd
+)
+"sequential.ml" 37 1658 1692 "sequential.ml" 37 1658 1711
+type(
+  'b * 'd
+)
+"sequential.ml" 37 1658 1715 "sequential.ml" 37 1658 1718
+type(
+  ('b * 'd) list
+)
+ident(
+  int_ref res "sequential.ml" 37 1658 1685 "sequential.ml" 37 1658 1688
+)
+"sequential.ml" 37 1658 1692 "sequential.ml" 37 1658 1718
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 37 1658 1673 "sequential.ml" 37 1658 1719
+type(
+  'b -> 'c list list -> ('b * 'd) list -> ('b * 'd) list
+)
+"sequential.ml" 37 1658 1720 "sequential.ml" 37 1658 1721
+type(
+  ('b, 'c list list) Hashtbl.t
+)
+ident(
+  int_ref h "sequential.ml" 31 1446 1452 "sequential.ml" 31 1446 1453
+)
+"sequential.ml" 37 1658 1722 "sequential.ml" 37 1658 1724
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 37 1658 1660 "sequential.ml" 37 1658 1724
+call(
+  tail
+)
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 36 1608 1610 "sequential.ml" 37 1658 1724
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 32 1479 1481 "sequential.ml" 37 1658 1724
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 31 1446 1448 "sequential.ml" 37 1658 1724
+type(
+  ('b * 'd) list
+)
+"sequential.ml" 40 1727 1731 "sequential.ml" 40 1727 1738
+type(
+  worker:('a -> 'b) ->
+  master:('a * 'c -> 'b -> ('a * 'c) list) -> ('a * 'c) list -> unit
+)
+ident(
+  def compute "sequential.ml" 48 1989 1995 "sequential.ml" 1 0 -1
+)
+"sequential.ml" 40 1727 1740 "sequential.ml" 40 1727 1746
+type(
+  'a -> 'b
+)
+ident(
+  def worker "sequential.ml" 40 1727 1747 "sequential.ml" 48 1989 1995
+)
+"sequential.ml" 40 1727 1748 "sequential.ml" 40 1727 1754
+type(
+  'a * 'c -> 'b -> ('a * 'c) list
+)
+ident(
+  def master "sequential.ml" 40 1727 1755 "sequential.ml" 48 1989 1995
+)
+"sequential.ml" 40 1727 1755 "sequential.ml" 40 1727 1756
+type(
+  ('a * 'c) list
+)
+ident(
+  def l "sequential.ml" 41 1759 1761 "sequential.ml" 48 1989 1995
+)
+"sequential.ml" 41 1759 1765 "sequential.ml" 41 1759 1772
+type(
+  ('a * 'c) Stack.t
+)
+ident(
+  def pending "sequential.ml" 42 1794 1796 "sequential.ml" 48 1989 1995
+)
+"sequential.ml" 41 1759 1775 "sequential.ml" 41 1759 1787
+type(
+  unit -> ('a * 'c) Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"sequential.ml" 41 1759 1788 "sequential.ml" 41 1759 1790
+type(
+  unit
+)
+"sequential.ml" 41 1759 1775 "sequential.ml" 41 1759 1790
+call(
+  stack
+)
+type(
+  ('a * 'c) Stack.t
+)
+"sequential.ml" 42 1794 1800 "sequential.ml" 42 1794 1803
+type(
+  ('a * 'c) list -> unit
+)
+ident(
+  def add "sequential.ml" 43 1855 1857 "sequential.ml" 48 1989 1995
+)
+"sequential.ml" 42 1794 1804 "sequential.ml" 42 1794 1805
+type(
+  ('a * 'c) list
+)
+ident(
+  def l "sequential.ml" 42 1794 1808 "sequential.ml" 42 1794 1851
+)
+"sequential.ml" 42 1794 1808 "sequential.ml" 42 1794 1817
+type(
+  ('a * 'c -> unit) -> ('a * 'c) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sequential.ml" 42 1794 1823 "sequential.ml" 42 1794 1824
+type(
+  'a * 'c
+)
+ident(
+  def t "sequential.ml" 42 1794 1828 "sequential.ml" 42 1794 1848
+)
+"sequential.ml" 42 1794 1828 "sequential.ml" 42 1794 1838
+type(
+  'a * 'c -> ('a * 'c) Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"sequential.ml" 42 1794 1839 "sequential.ml" 42 1794 1840
+type(
+  'a * 'c
+)
+ident(
+  int_ref t "sequential.ml" 42 1794 1823 "sequential.ml" 42 1794 1824
+)
+"sequential.ml" 42 1794 1841 "sequential.ml" 42 1794 1848
+type(
+  ('a * 'c) Stack.t
+)
+ident(
+  int_ref pending "sequential.ml" 41 1759 1765 "sequential.ml" 41 1759 1772
+)
+"sequential.ml" 42 1794 1828 "sequential.ml" 42 1794 1848
+call(
+  tail
+)
+type(
+  unit
+)
+"sequential.ml" 42 1794 1818 "sequential.ml" 42 1794 1849
+type(
+  'a * 'c -> unit
+)
+"sequential.ml" 42 1794 1850 "sequential.ml" 42 1794 1851
+type(
+  ('a * 'c) list
+)
+ident(
+  int_ref l "sequential.ml" 42 1794 1804 "sequential.ml" 42 1794 1805
+)
+"sequential.ml" 42 1794 1808 "sequential.ml" 42 1794 1851
+call(
+  tail
+)
+type(
+  unit
+)
+"sequential.ml" 43 1855 1857 "sequential.ml" 43 1855 1860
+type(
+  ('a * 'c) list -> unit
+)
+ident(
+  int_ref add "sequential.ml" 42 1794 1800 "sequential.ml" 42 1794 1803
+)
+"sequential.ml" 43 1855 1861 "sequential.ml" 43 1855 1862
+type(
+  ('a * 'c) list
+)
+ident(
+  int_ref l "sequential.ml" 40 1727 1755 "sequential.ml" 40 1727 1756
+)
+"sequential.ml" 43 1855 1857 "sequential.ml" 43 1855 1862
+call(
+  stack
+)
+type(
+  unit
+)
+"sequential.ml" 44 1864 1872 "sequential.ml" 44 1864 1875
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sequential.ml" 44 1864 1877 "sequential.ml" 44 1864 1891
+type(
+  ('a * 'c) Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"sequential.ml" 44 1864 1892 "sequential.ml" 44 1864 1899
+type(
+  ('a * 'c) Stack.t
+)
+ident(
+  int_ref pending "sequential.ml" 41 1759 1765 "sequential.ml" 41 1759 1772
+)
+"sequential.ml" 44 1864 1876 "sequential.ml" 44 1864 1900
+call(
+  stack
+)
+type(
+  bool
+)
+"sequential.ml" 44 1864 1872 "sequential.ml" 44 1864 1900
+type(
+  bool
+)
+"sequential.ml" 45 1904 1912 "sequential.ml" 45 1904 1913
+type(
+  'a
+)
+ident(
+  def a "sequential.ml" 46 1944 1948 "sequential.ml" 47 1979 1988
+)
+"sequential.ml" 45 1904 1914 "sequential.ml" 45 1904 1915
+type(
+  'c
+)
+"sequential.ml" 45 1904 1912 "sequential.ml" 45 1904 1915
+type(
+  'a * 'c
+)
+"sequential.ml" 45 1904 1919 "sequential.ml" 45 1904 1920
+ident(
+  def t "sequential.ml" 46 1944 1948 "sequential.ml" 47 1979 1988
+)
+"sequential.ml" 45 1904 1912 "sequential.ml" 45 1904 1920
+type(
+  'a * 'c
+)
+"sequential.ml" 45 1904 1923 "sequential.ml" 45 1904 1932
+type(
+  ('a * 'c) Stack.t -> 'a * 'c
+)
+ident(
+  ext_ref Stack.pop
+)
+"sequential.ml" 45 1904 1933 "sequential.ml" 45 1904 1940
+type(
+  ('a * 'c) Stack.t
+)
+ident(
+  int_ref pending "sequential.ml" 41 1759 1765 "sequential.ml" 41 1759 1772
+)
+"sequential.ml" 45 1904 1923 "sequential.ml" 45 1904 1940
+call(
+  stack
+)
+type(
+  'a * 'c
+)
+"sequential.ml" 46 1944 1952 "sequential.ml" 46 1944 1953
+type(
+  ('a * 'c) list
+)
+ident(
+  def l "sequential.ml" 47 1979 1983 "sequential.ml" 47 1979 1988
+)
+"sequential.ml" 46 1944 1956 "sequential.ml" 46 1944 1962
+type(
+  'a * 'c -> 'b -> ('a * 'c) list
+)
+ident(
+  int_ref master "sequential.ml" 40 1727 1748 "sequential.ml" 40 1727 1754
+)
+"sequential.ml" 46 1944 1963 "sequential.ml" 46 1944 1964
+type(
+  'a * 'c
+)
+ident(
+  int_ref t "sequential.ml" 45 1904 1912 "sequential.ml" 45 1904 1920
+)
+"sequential.ml" 46 1944 1966 "sequential.ml" 46 1944 1972
+type(
+  'a -> 'b
+)
+ident(
+  int_ref worker "sequential.ml" 40 1727 1740 "sequential.ml" 40 1727 1746
+)
+"sequential.ml" 46 1944 1973 "sequential.ml" 46 1944 1974
+type(
+  'a
+)
+ident(
+  int_ref a "sequential.ml" 45 1904 1912 "sequential.ml" 45 1904 1913
+)
+"sequential.ml" 46 1944 1965 "sequential.ml" 46 1944 1975
+call(
+  stack
+)
+type(
+  'b
+)
+"sequential.ml" 46 1944 1956 "sequential.ml" 46 1944 1975
+call(
+  stack
+)
+type(
+  ('a * 'c) list
+)
+"sequential.ml" 47 1979 1983 "sequential.ml" 47 1979 1986
+type(
+  ('a * 'c) list -> unit
+)
+ident(
+  int_ref add "sequential.ml" 42 1794 1800 "sequential.ml" 42 1794 1803
+)
+"sequential.ml" 47 1979 1987 "sequential.ml" 47 1979 1988
+type(
+  ('a * 'c) list
+)
+ident(
+  int_ref l "sequential.ml" 46 1944 1952 "sequential.ml" 46 1944 1953
+)
+"sequential.ml" 47 1979 1983 "sequential.ml" 47 1979 1988
+call(
+  stack
+)
+type(
+  unit
+)
+"sequential.ml" 46 1944 1948 "sequential.ml" 47 1979 1988
+type(
+  unit
+)
+"sequential.ml" 45 1904 1908 "sequential.ml" 47 1979 1988
+type(
+  unit
+)
+"sequential.ml" 44 1864 1866 "sequential.ml" 48 1989 1995
+type(
+  unit
+)
+"sequential.ml" 43 1855 1857 "sequential.ml" 48 1989 1995
+type(
+  unit
+)
+"sequential.ml" 42 1794 1796 "sequential.ml" 48 1989 1995
+type(
+  unit
+)
+"sequential.ml" 41 1759 1761 "sequential.ml" 48 1989 1995
+type(
+  unit
+)

@@ -1,0 +1,5 @@
+"Rule: ocaml: cmx* & o* -> native (%=gamefun )": ")\193\145d/\000_\012\222\152\020\135aD\242\017"
+"Rule: ocaml: ml -> cmo & cmi (%=gamefun )": "\223i:\250\250\150\"M\198v\015\236O%\193g"
+"Rule: ocaml dependencies ml (%=gamefun )": "\2110a/\222\224\217\"\022\185\206\027\031v{1"
+"Resource: /home/bigue/Bureau/4A/Ocaml/Project/Dames/test/gamefun.ml": "\223WS\238\208K\201b\172^\160`\239}\138n"
+"Rule: ocaml: ml & cmi -> cmx & o (%=gamefun )": "\189(KRwHO\r\216\199\137\004t\180\181\148"

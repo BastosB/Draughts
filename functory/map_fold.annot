@@ -1,0 +1,2969 @@
+"map_fold.ml" 21 1214 1218 "map_fold.ml" 21 1214 1234
+type(
+  ('a -> 'b) ->
+  ('c -> 'd -> 'e) -> ('a, 'c * 'd) map_or_fold -> ('b, 'e) map_or_fold
+)
+ident(
+  def map_fold_wrapper "map_fold.ml" 25 1316 1316 "map_fold.ml" 1 0 -1
+)
+"map_fold.ml" 21 1214 1235 "map_fold.ml" 21 1214 1238
+type(
+  'a -> 'b
+)
+ident(
+  def map "map_fold.ml" 21 1214 1239 "map_fold.ml" 23 1280 1314
+)
+"map_fold.ml" 21 1214 1239 "map_fold.ml" 21 1214 1243
+type(
+  'c -> 'd -> 'e
+)
+ident(
+  def fold "map_fold.ml" 21 1214 1246 "map_fold.ml" 23 1280 1314
+)
+"map_fold.ml" 22 1255 1263 "map_fold.ml" 22 1255 1264
+type(
+  'a
+)
+ident(
+  def x "map_fold.ml" 22 1255 1268 "map_fold.ml" 22 1255 1279
+)
+"map_fold.ml" 22 1255 1259 "map_fold.ml" 22 1255 1264
+type(
+  ('a, 'c * 'd) map_or_fold
+)
+"map_fold.ml" 22 1255 1273 "map_fold.ml" 22 1255 1276
+type(
+  'a -> 'b
+)
+ident(
+  int_ref map "map_fold.ml" 21 1214 1235 "map_fold.ml" 21 1214 1238
+)
+"map_fold.ml" 22 1255 1277 "map_fold.ml" 22 1255 1278
+type(
+  'a
+)
+ident(
+  int_ref x "map_fold.ml" 22 1255 1263 "map_fold.ml" 22 1255 1264
+)
+"map_fold.ml" 22 1255 1272 "map_fold.ml" 22 1255 1279
+call(
+  stack
+)
+type(
+  'b
+)
+"map_fold.ml" 22 1255 1268 "map_fold.ml" 22 1255 1279
+type(
+  ('b, 'e) map_or_fold
+)
+"map_fold.ml" 23 1280 1290 "map_fold.ml" 23 1280 1291
+type(
+  'c
+)
+ident(
+  def x "map_fold.ml" 23 1280 1299 "map_fold.ml" 23 1280 1314
+)
+"map_fold.ml" 23 1280 1293 "map_fold.ml" 23 1280 1294
+type(
+  'd
+)
+ident(
+  def y "map_fold.ml" 23 1280 1299 "map_fold.ml" 23 1280 1314
+)
+"map_fold.ml" 23 1280 1289 "map_fold.ml" 23 1280 1295
+type(
+  'c * 'd
+)
+"map_fold.ml" 23 1280 1284 "map_fold.ml" 23 1280 1295
+type(
+  ('a, 'c * 'd) map_or_fold
+)
+"map_fold.ml" 23 1280 1305 "map_fold.ml" 23 1280 1309
+type(
+  'c -> 'd -> 'e
+)
+ident(
+  int_ref fold "map_fold.ml" 21 1214 1239 "map_fold.ml" 21 1214 1243
+)
+"map_fold.ml" 23 1280 1310 "map_fold.ml" 23 1280 1311
+type(
+  'c
+)
+ident(
+  int_ref x "map_fold.ml" 23 1280 1290 "map_fold.ml" 23 1280 1291
+)
+"map_fold.ml" 23 1280 1312 "map_fold.ml" 23 1280 1313
+type(
+  'd
+)
+ident(
+  int_ref y "map_fold.ml" 23 1280 1293 "map_fold.ml" 23 1280 1294
+)
+"map_fold.ml" 23 1280 1304 "map_fold.ml" 23 1280 1314
+call(
+  stack
+)
+type(
+  'e
+)
+"map_fold.ml" 23 1280 1299 "map_fold.ml" 23 1280 1314
+type(
+  ('b, 'e) map_or_fold
+)
+"map_fold.ml" 21 1214 1246 "map_fold.ml" 23 1280 1314
+type(
+  ('a, 'c * 'd) map_or_fold -> ('b, 'e) map_or_fold
+)
+"map_fold.ml" 25 1316 1320 "map_fold.ml" 25 1316 1337
+type(
+  ('a -> 'b) -> ('c -> 'd -> 'b) -> ('a, 'c * 'd) map_or_fold -> 'b
+)
+ident(
+  def map_fold_wrapper2 "map_fold.ml" 29 1406 1406 "map_fold.ml" 1 0 -1
+)
+"map_fold.ml" 25 1316 1338 "map_fold.ml" 25 1316 1341
+type(
+  'a -> 'b
+)
+ident(
+  def map "map_fold.ml" 25 1316 1342 "map_fold.ml" 27 1377 1404
+)
+"map_fold.ml" 25 1316 1342 "map_fold.ml" 25 1316 1346
+type(
+  'c -> 'd -> 'b
+)
+ident(
+  def fold "map_fold.ml" 25 1316 1349 "map_fold.ml" 27 1377 1404
+)
+"map_fold.ml" 26 1358 1366 "map_fold.ml" 26 1358 1367
+type(
+  'a
+)
+ident(
+  def x "map_fold.ml" 26 1358 1371 "map_fold.ml" 26 1358 1376
+)
+"map_fold.ml" 26 1358 1362 "map_fold.ml" 26 1358 1367
+type(
+  ('a, 'c * 'd) map_or_fold
+)
+"map_fold.ml" 26 1358 1371 "map_fold.ml" 26 1358 1374
+type(
+  'a -> 'b
+)
+ident(
+  int_ref map "map_fold.ml" 25 1316 1338 "map_fold.ml" 25 1316 1341
+)
+"map_fold.ml" 26 1358 1375 "map_fold.ml" 26 1358 1376
+type(
+  'a
+)
+ident(
+  int_ref x "map_fold.ml" 26 1358 1366 "map_fold.ml" 26 1358 1367
+)
+"map_fold.ml" 26 1358 1371 "map_fold.ml" 26 1358 1376
+call(
+  tail
+)
+type(
+  'b
+)
+"map_fold.ml" 27 1377 1387 "map_fold.ml" 27 1377 1388
+type(
+  'c
+)
+ident(
+  def x "map_fold.ml" 27 1377 1396 "map_fold.ml" 27 1377 1404
+)
+"map_fold.ml" 27 1377 1390 "map_fold.ml" 27 1377 1391
+type(
+  'd
+)
+ident(
+  def y "map_fold.ml" 27 1377 1396 "map_fold.ml" 27 1377 1404
+)
+"map_fold.ml" 27 1377 1386 "map_fold.ml" 27 1377 1392
+type(
+  'c * 'd
+)
+"map_fold.ml" 27 1377 1381 "map_fold.ml" 27 1377 1392
+type(
+  ('a, 'c * 'd) map_or_fold
+)
+"map_fold.ml" 27 1377 1396 "map_fold.ml" 27 1377 1400
+type(
+  'c -> 'd -> 'b
+)
+ident(
+  int_ref fold "map_fold.ml" 25 1316 1342 "map_fold.ml" 25 1316 1346
+)
+"map_fold.ml" 27 1377 1401 "map_fold.ml" 27 1377 1402
+type(
+  'c
+)
+ident(
+  int_ref x "map_fold.ml" 27 1377 1387 "map_fold.ml" 27 1377 1388
+)
+"map_fold.ml" 27 1377 1403 "map_fold.ml" 27 1377 1404
+type(
+  'd
+)
+ident(
+  int_ref y "map_fold.ml" 27 1377 1390 "map_fold.ml" 27 1377 1391
+)
+"map_fold.ml" 27 1377 1396 "map_fold.ml" 27 1377 1404
+call(
+  tail
+)
+type(
+  'b
+)
+"map_fold.ml" 25 1316 1349 "map_fold.ml" 27 1377 1404
+type(
+  ('a, 'c * 'd) map_or_fold -> 'b
+)
+"map_fold.ml" 55 1999 2005 "map_fold.ml" 55 1999 2008
+type(
+  f:('a -> 'b) -> 'a list -> 'b list
+)
+ident(
+  def map "map_fold.ml" 64 2305 2307 "map_fold.ml" 149 4877 4880
+)
+"map_fold.ml" 55 1999 2010 "map_fold.ml" 55 1999 2011
+type(
+  'a -> 'b
+)
+ident(
+  def f "map_fold.ml" 55 1999 2012 "map_fold.ml" 62 2247 2303
+)
+"map_fold.ml" 55 1999 2012 "map_fold.ml" 55 1999 2013
+type(
+  'a list
+)
+ident(
+  def l "map_fold.ml" 56 2016 2020 "map_fold.ml" 62 2247 2303
+)
+"map_fold.ml" 56 2016 2024 "map_fold.ml" 56 2016 2029
+type(
+  ('a * int) list
+)
+ident(
+  def tasks "map_fold.ml" 57 2088 2092 "map_fold.ml" 62 2247 2303
+)
+"map_fold.ml" 56 2016 2036 "map_fold.ml" 56 2016 2037
+type(
+  int ref
+)
+ident(
+  def i "map_fold.ml" 56 2016 2049 "map_fold.ml" 56 2016 2084
+)
+"map_fold.ml" 56 2016 2040 "map_fold.ml" 56 2016 2043
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"map_fold.ml" 56 2016 2044 "map_fold.ml" 56 2016 2045
+type(
+  int
+)
+"map_fold.ml" 56 2016 2040 "map_fold.ml" 56 2016 2045
+type(
+  int ref
+)
+"map_fold.ml" 56 2016 2049 "map_fold.ml" 56 2016 2057
+type(
+  ('a -> 'a * int) -> 'a list -> ('a * int) list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 56 2016 2063 "map_fold.ml" 56 2016 2064
+type(
+  'a
+)
+ident(
+  def x "map_fold.ml" 56 2016 2068 "map_fold.ml" 56 2016 2081
+)
+"map_fold.ml" 56 2016 2068 "map_fold.ml" 56 2016 2072
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"map_fold.ml" 56 2016 2073 "map_fold.ml" 56 2016 2074
+type(
+  int ref
+)
+ident(
+  int_ref i "map_fold.ml" 56 2016 2036 "map_fold.ml" 56 2016 2037
+)
+"map_fold.ml" 56 2016 2068 "map_fold.ml" 56 2016 2074
+type(
+  unit
+)
+"map_fold.ml" 56 2016 2076 "map_fold.ml" 56 2016 2077
+type(
+  'a
+)
+ident(
+  int_ref x "map_fold.ml" 56 2016 2063 "map_fold.ml" 56 2016 2064
+)
+"map_fold.ml" 56 2016 2079 "map_fold.ml" 56 2016 2080
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 56 2016 2080 "map_fold.ml" 56 2016 2081
+type(
+  int ref
+)
+ident(
+  int_ref i "map_fold.ml" 56 2016 2036 "map_fold.ml" 56 2016 2037
+)
+"map_fold.ml" 56 2016 2079 "map_fold.ml" 56 2016 2081
+type(
+  int
+)
+"map_fold.ml" 56 2016 2076 "map_fold.ml" 56 2016 2081
+type(
+  'a * int
+)
+"map_fold.ml" 56 2016 2068 "map_fold.ml" 56 2016 2081
+type(
+  'a * int
+)
+"map_fold.ml" 56 2016 2058 "map_fold.ml" 56 2016 2082
+type(
+  'a -> 'a * int
+)
+"map_fold.ml" 56 2016 2083 "map_fold.ml" 56 2016 2084
+type(
+  'a list
+)
+ident(
+  int_ref l "map_fold.ml" 55 1999 2012 "map_fold.ml" 55 1999 2013
+)
+"map_fold.ml" 56 2016 2049 "map_fold.ml" 56 2016 2084
+call(
+  stack
+)
+type(
+  ('a * int) list
+)
+"map_fold.ml" 56 2016 2032 "map_fold.ml" 56 2016 2084
+type(
+  ('a * int) list
+)
+"map_fold.ml" 57 2088 2096 "map_fold.ml" 57 2088 2103
+type(
+  (int, 'b) Hashtbl.t
+)
+ident(
+  def results "map_fold.ml" 58 2145 2149 "map_fold.ml" 62 2247 2303
+)
+"map_fold.ml" 57 2088 2106 "map_fold.ml" 57 2088 2120
+type(
+  ?random:bool -> int -> (int, 'b) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"map_fold.ml" 57 2088 2121 "map_fold.ml" 57 2088 2123
+type(
+  int
+)
+"map_fold.ml" 57 2088 2106 "map_fold.ml" 57 2088 2123
+call(
+  stack
+)
+type(
+  (int, 'b) Hashtbl.t
+)
+"map_fold.ml" 58 2145 2149 "map_fold.ml" 58 2145 2158
+type(
+  worker:('a -> 'b) ->
+  master:('a * int -> 'b -> ('a * int) list) -> ('a * int) list -> unit
+)
+ident(
+  int_ref X.compute "map_fold.ml" 31 1429 1434 "map_fold.ml" 35 1554 1565
+)
+"map_fold.ml" 59 2159 2173 "map_fold.ml" 59 2159 2174
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "map_fold.ml" 55 1999 2010 "map_fold.ml" 55 1999 2011
+)
+"map_fold.ml" 60 2175 2195 "map_fold.ml" 60 2175 2196
+type(
+  'a
+)
+"map_fold.ml" 60 2175 2197 "map_fold.ml" 60 2175 2198
+type(
+  int
+)
+ident(
+  def i "map_fold.ml" 60 2175 2200 "map_fold.ml" 60 2175 2232
+)
+"map_fold.ml" 60 2175 2194 "map_fold.ml" 60 2175 2199
+type(
+  'a * int
+)
+"map_fold.ml" 60 2175 2200 "map_fold.ml" 60 2175 2201
+type(
+  'b
+)
+ident(
+  def r "map_fold.ml" 60 2175 2205 "map_fold.ml" 60 2175 2232
+)
+"map_fold.ml" 60 2175 2205 "map_fold.ml" 60 2175 2216
+type(
+  (int, 'b) Hashtbl.t -> int -> 'b -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"map_fold.ml" 60 2175 2217 "map_fold.ml" 60 2175 2224
+type(
+  (int, 'b) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 57 2088 2096 "map_fold.ml" 57 2088 2103
+)
+"map_fold.ml" 60 2175 2225 "map_fold.ml" 60 2175 2226
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 60 2175 2197 "map_fold.ml" 60 2175 2198
+)
+"map_fold.ml" 60 2175 2227 "map_fold.ml" 60 2175 2228
+type(
+  'b
+)
+ident(
+  int_ref r "map_fold.ml" 60 2175 2200 "map_fold.ml" 60 2175 2201
+)
+"map_fold.ml" 60 2175 2205 "map_fold.ml" 60 2175 2228
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 60 2175 2230 "map_fold.ml" 60 2175 2232
+type(
+  ('a * int) list
+)
+"map_fold.ml" 60 2175 2205 "map_fold.ml" 60 2175 2232
+type(
+  ('a * int) list
+)
+"map_fold.ml" 60 2175 2189 "map_fold.ml" 60 2175 2233
+type(
+  'a * int -> 'b -> ('a * int) list
+)
+"map_fold.ml" 61 2234 2240 "map_fold.ml" 61 2234 2245
+type(
+  ('a * int) list
+)
+ident(
+  int_ref tasks "map_fold.ml" 56 2016 2024 "map_fold.ml" 56 2016 2029
+)
+"map_fold.ml" 58 2145 2149 "map_fold.ml" 61 2234 2245
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 62 2247 2251 "map_fold.ml" 62 2247 2259
+type(
+  ('a * int -> 'b) -> ('a * int) list -> 'b list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 62 2247 2266 "map_fold.ml" 62 2247 2267
+type(
+  'a
+)
+"map_fold.ml" 62 2247 2268 "map_fold.ml" 62 2247 2269
+type(
+  int
+)
+ident(
+  def i "map_fold.ml" 62 2247 2274 "map_fold.ml" 62 2247 2296
+)
+"map_fold.ml" 62 2247 2265 "map_fold.ml" 62 2247 2270
+type(
+  'a * int
+)
+"map_fold.ml" 62 2247 2274 "map_fold.ml" 62 2247 2286
+type(
+  (int, 'b) Hashtbl.t -> int -> 'b
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"map_fold.ml" 62 2247 2287 "map_fold.ml" 62 2247 2294
+type(
+  (int, 'b) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 57 2088 2096 "map_fold.ml" 57 2088 2103
+)
+"map_fold.ml" 62 2247 2295 "map_fold.ml" 62 2247 2296
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 62 2247 2268 "map_fold.ml" 62 2247 2269
+)
+"map_fold.ml" 62 2247 2274 "map_fold.ml" 62 2247 2296
+call(
+  tail
+)
+type(
+  'b
+)
+"map_fold.ml" 62 2247 2260 "map_fold.ml" 62 2247 2297
+type(
+  'a * int -> 'b
+)
+"map_fold.ml" 62 2247 2298 "map_fold.ml" 62 2247 2303
+type(
+  ('a * int) list
+)
+ident(
+  int_ref tasks "map_fold.ml" 56 2016 2024 "map_fold.ml" 56 2016 2029
+)
+"map_fold.ml" 62 2247 2251 "map_fold.ml" 62 2247 2303
+call(
+  tail
+)
+type(
+  'b list
+)
+"map_fold.ml" 58 2145 2149 "map_fold.ml" 62 2247 2303
+type(
+  'b list
+)
+"map_fold.ml" 57 2088 2092 "map_fold.ml" 62 2247 2303
+type(
+  'b list
+)
+"map_fold.ml" 56 2016 2020 "map_fold.ml" 62 2247 2303
+type(
+  'b list
+)
+"map_fold.ml" 64 2305 2311 "map_fold.ml" 64 2305 2325
+type(
+  f:('a0 -> 'b0) -> fold:('c -> 'b0 -> 'c) -> 'c -> 'a0 list -> 'c
+)
+ident(
+  def map_local_fold "map_fold.ml" 72 2528 2530 "map_fold.ml" 149 4877 4880
+)
+"map_fold.ml" 64 2305 2328 "map_fold.ml" 64 2305 2329
+type(
+  'a0 -> 'b0
+)
+ident(
+  def f "map_fold.ml" 64 2305 2342 "map_fold.ml" 70 2517 2525
+)
+"map_fold.ml" 64 2305 2344 "map_fold.ml" 64 2305 2348
+type(
+  'c -> 'b0 -> 'c
+)
+ident(
+  def fold "map_fold.ml" 64 2305 2367 "map_fold.ml" 70 2517 2525
+)
+"map_fold.ml" 64 2305 2367 "map_fold.ml" 64 2305 2370
+type(
+  'c
+)
+ident(
+  def acc "map_fold.ml" 64 2305 2371 "map_fold.ml" 70 2517 2525
+)
+"map_fold.ml" 64 2305 2371 "map_fold.ml" 64 2305 2372
+type(
+  'a0 list
+)
+ident(
+  def l "map_fold.ml" 65 2375 2379 "map_fold.ml" 70 2517 2525
+)
+"map_fold.ml" 65 2375 2383 "map_fold.ml" 65 2375 2386
+type(
+  'c ref
+)
+ident(
+  def acc "map_fold.ml" 66 2400 2404 "map_fold.ml" 70 2517 2525
+)
+"map_fold.ml" 65 2375 2389 "map_fold.ml" 65 2375 2392
+type(
+  'c -> 'c ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"map_fold.ml" 65 2375 2393 "map_fold.ml" 65 2375 2396
+type(
+  'c
+)
+ident(
+  int_ref acc "map_fold.ml" 64 2305 2367 "map_fold.ml" 64 2305 2370
+)
+"map_fold.ml" 65 2375 2389 "map_fold.ml" 65 2375 2396
+type(
+  'c ref
+)
+"map_fold.ml" 66 2400 2404 "map_fold.ml" 66 2400 2413
+type(
+  worker:('a0 -> 'b0) ->
+  master:('a0 * unit -> 'b0 -> ('a0 * unit) list) ->
+  ('a0 * unit) list -> unit
+)
+ident(
+  int_ref X.compute "map_fold.ml" 31 1429 1434 "map_fold.ml" 35 1554 1565
+)
+"map_fold.ml" 67 2414 2428 "map_fold.ml" 67 2414 2429
+type(
+  'a0 -> 'b0
+)
+ident(
+  int_ref f "map_fold.ml" 64 2305 2328 "map_fold.ml" 64 2305 2329
+)
+"map_fold.ml" 68 2430 2449 "map_fold.ml" 68 2430 2450
+type(
+  'a0 * unit
+)
+"map_fold.ml" 68 2430 2451 "map_fold.ml" 68 2430 2452
+type(
+  'b0
+)
+ident(
+  def r "map_fold.ml" 68 2430 2456 "map_fold.ml" 68 2430 2478
+)
+"map_fold.ml" 68 2430 2456 "map_fold.ml" 68 2430 2459
+type(
+  'c ref
+)
+ident(
+  int_ref acc "map_fold.ml" 65 2375 2383 "map_fold.ml" 65 2375 2386
+)
+"map_fold.ml" 68 2430 2460 "map_fold.ml" 68 2430 2462
+type(
+  'c ref -> 'c -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"map_fold.ml" 68 2430 2463 "map_fold.ml" 68 2430 2467
+type(
+  'c -> 'b0 -> 'c
+)
+ident(
+  int_ref fold "map_fold.ml" 64 2305 2344 "map_fold.ml" 64 2305 2348
+)
+"map_fold.ml" 68 2430 2468 "map_fold.ml" 68 2430 2469
+type(
+  'c ref -> 'c
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 68 2430 2469 "map_fold.ml" 68 2430 2472
+type(
+  'c ref
+)
+ident(
+  int_ref acc "map_fold.ml" 65 2375 2383 "map_fold.ml" 65 2375 2386
+)
+"map_fold.ml" 68 2430 2468 "map_fold.ml" 68 2430 2472
+type(
+  'c
+)
+"map_fold.ml" 68 2430 2473 "map_fold.ml" 68 2430 2474
+type(
+  'b0
+)
+ident(
+  int_ref r "map_fold.ml" 68 2430 2451 "map_fold.ml" 68 2430 2452
+)
+"map_fold.ml" 68 2430 2463 "map_fold.ml" 68 2430 2474
+call(
+  stack
+)
+type(
+  'c
+)
+"map_fold.ml" 68 2430 2456 "map_fold.ml" 68 2430 2474
+type(
+  unit
+)
+"map_fold.ml" 68 2430 2476 "map_fold.ml" 68 2430 2478
+type(
+  ('a0 * unit) list
+)
+"map_fold.ml" 68 2430 2456 "map_fold.ml" 68 2430 2478
+type(
+  ('a0 * unit) list
+)
+"map_fold.ml" 68 2430 2444 "map_fold.ml" 68 2430 2479
+type(
+  'a0 * unit -> 'b0 -> ('a0 * unit) list
+)
+"map_fold.ml" 69 2480 2487 "map_fold.ml" 69 2480 2495
+type(
+  ('a0 -> 'a0 * unit) -> 'a0 list -> ('a0 * unit) list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 69 2480 2501 "map_fold.ml" 69 2480 2502
+type(
+  'a0
+)
+ident(
+  def x "map_fold.ml" 69 2480 2506 "map_fold.ml" 69 2480 2511
+)
+"map_fold.ml" 69 2480 2506 "map_fold.ml" 69 2480 2507
+type(
+  'a0
+)
+ident(
+  int_ref x "map_fold.ml" 69 2480 2501 "map_fold.ml" 69 2480 2502
+)
+"map_fold.ml" 69 2480 2509 "map_fold.ml" 69 2480 2511
+type(
+  unit
+)
+"map_fold.ml" 69 2480 2506 "map_fold.ml" 69 2480 2511
+type(
+  'a0 * unit
+)
+"map_fold.ml" 69 2480 2496 "map_fold.ml" 69 2480 2512
+type(
+  'a0 -> 'a0 * unit
+)
+"map_fold.ml" 69 2480 2513 "map_fold.ml" 69 2480 2514
+type(
+  'a0 list
+)
+ident(
+  int_ref l "map_fold.ml" 64 2305 2371 "map_fold.ml" 64 2305 2372
+)
+"map_fold.ml" 69 2480 2486 "map_fold.ml" 69 2480 2515
+call(
+  stack
+)
+type(
+  ('a0 * unit) list
+)
+"map_fold.ml" 66 2400 2404 "map_fold.ml" 69 2480 2515
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 70 2517 2521 "map_fold.ml" 70 2517 2522
+type(
+  'c ref -> 'c
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 70 2517 2522 "map_fold.ml" 70 2517 2525
+type(
+  'c ref
+)
+ident(
+  int_ref acc "map_fold.ml" 65 2375 2383 "map_fold.ml" 65 2375 2386
+)
+"map_fold.ml" 70 2517 2521 "map_fold.ml" 70 2517 2525
+type(
+  'c
+)
+"map_fold.ml" 66 2400 2404 "map_fold.ml" 70 2517 2525
+type(
+  'c
+)
+"map_fold.ml" 65 2375 2379 "map_fold.ml" 70 2517 2525
+type(
+  'c
+)
+"map_fold.ml" 72 2528 2534 "map_fold.ml" 72 2528 2549
+type(
+  f:('a1 -> 'b1) -> fold:('c0 -> 'b1 -> 'c0) -> 'c0 -> 'a1 list -> 'c0
+)
+ident(
+  def map_remote_fold "map_fold.ml" 96 3258 3260 "map_fold.ml" 149 4877 4880
+)
+"map_fold.ml" 72 2528 2553 "map_fold.ml" 72 2528 2554
+type(
+  'a1 -> 'b1
+)
+ident(
+  def f "map_fold.ml" 72 2528 2567 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 72 2528 2569 "map_fold.ml" 72 2528 2573
+type(
+  'c0 -> 'b1 -> 'c0
+)
+ident(
+  def fold "map_fold.ml" 72 2528 2592 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 72 2528 2592 "map_fold.ml" 72 2528 2595
+type(
+  'c0
+)
+ident(
+  def acc "map_fold.ml" 72 2528 2596 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 72 2528 2596 "map_fold.ml" 72 2528 2597
+type(
+  'a1 list
+)
+ident(
+  def l "map_fold.ml" 73 2600 2604 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+type(
+  'c0 option ref
+)
+ident(
+  def acc "map_fold.ml" 74 2632 2636 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 73 2600 2614 "map_fold.ml" 73 2600 2617
+type(
+  'c0 option -> 'c0 option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"map_fold.ml" 73 2600 2624 "map_fold.ml" 73 2600 2627
+type(
+  'c0
+)
+ident(
+  int_ref acc "map_fold.ml" 72 2528 2592 "map_fold.ml" 72 2528 2595
+)
+"map_fold.ml" 73 2600 2618 "map_fold.ml" 73 2600 2628
+type(
+  'c0 option
+)
+"map_fold.ml" 73 2600 2614 "map_fold.ml" 73 2600 2628
+type(
+  'c0 option ref
+)
+"map_fold.ml" 74 2632 2640 "map_fold.ml" 74 2632 2647
+type(
+  'b1 Stack.t
+)
+ident(
+  def pending "map_fold.ml" 75 2669 2673 "map_fold.ml" 94 3228 3256
+)
+"map_fold.ml" 74 2632 2650 "map_fold.ml" 74 2632 2662
+type(
+  unit -> 'b1 Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"map_fold.ml" 74 2632 2663 "map_fold.ml" 74 2632 2665
+type(
+  unit
+)
+"map_fold.ml" 74 2632 2650 "map_fold.ml" 74 2632 2665
+call(
+  stack
+)
+type(
+  'b1 Stack.t
+)
+"map_fold.ml" 75 2669 2673 "map_fold.ml" 75 2669 2682
+type(
+  worker:(('a1, 'c0 * 'b1) map_or_fold -> ('b1, 'c0) map_or_fold) ->
+  master:(('a1, 'c0 * 'b1) map_or_fold * unit ->
+          ('b1, 'c0) map_or_fold ->
+          (('a1, 'c0 * 'b1) map_or_fold * unit) list) ->
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list -> unit
+)
+ident(
+  int_ref X.compute "map_fold.ml" 31 1429 1434 "map_fold.ml" 35 1554 1565
+)
+"map_fold.ml" 76 2683 2698 "map_fold.ml" 76 2683 2714
+type(
+  ('a1 -> 'b1) ->
+  ('c0 -> 'b1 -> 'c0) ->
+  ('a1, 'c0 * 'b1) map_or_fold -> ('b1, 'c0) map_or_fold
+)
+ident(
+  int_ref map_fold_wrapper "map_fold.ml" 21 1214 1218 "map_fold.ml" 21 1214 1234
+)
+"map_fold.ml" 76 2683 2715 "map_fold.ml" 76 2683 2716
+type(
+  'a1 -> 'b1
+)
+ident(
+  int_ref f "map_fold.ml" 72 2528 2553 "map_fold.ml" 72 2528 2554
+)
+"map_fold.ml" 76 2683 2717 "map_fold.ml" 76 2683 2721
+type(
+  'c0 -> 'b1 -> 'c0
+)
+ident(
+  int_ref fold "map_fold.ml" 72 2528 2569 "map_fold.ml" 72 2528 2573
+)
+"map_fold.ml" 76 2683 2697 "map_fold.ml" 76 2683 2722
+call(
+  stack
+)
+type(
+  ('a1, 'c0 * 'b1) map_or_fold -> ('b1, 'c0) map_or_fold
+)
+"map_fold.ml" 77 2723 2742 "map_fold.ml" 77 2723 2743
+type(
+  ('a1, 'c0 * 'b1) map_or_fold * unit
+)
+"map_fold.ml" 77 2723 2744 "map_fold.ml" 77 2723 2745
+type(
+  ('b1, 'c0) map_or_fold
+)
+ident(
+  def r "map_fold.ml" 77 2723 2749 "map_fold.ml" 89 3085 3095
+)
+"map_fold.ml" 77 2723 2755 "map_fold.ml" 77 2723 2756
+type(
+  ('b1, 'c0) map_or_fold
+)
+ident(
+  int_ref r "map_fold.ml" 77 2723 2744 "map_fold.ml" 77 2723 2745
+)
+"map_fold.ml" 78 2762 2771 "map_fold.ml" 78 2762 2772
+type(
+  'b1
+)
+ident(
+  def r "map_fold.ml" 78 2762 2776 "map_fold.ml" 81 2890 2898
+)
+"map_fold.ml" 78 2762 2767 "map_fold.ml" 78 2762 2772
+type(
+  ('b1, 'c0) map_or_fold
+)
+"map_fold.ml" 78 2762 2788 "map_fold.ml" 78 2762 2789
+type(
+  'c0 option ref -> 'c0 option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 78 2762 2789 "map_fold.ml" 78 2762 2792
+type(
+  'c0 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+)
+"map_fold.ml" 78 2762 2788 "map_fold.ml" 78 2762 2792
+type(
+  'c0 option
+)
+"map_fold.ml" 79 2798 2807 "map_fold.ml" 79 2798 2811
+type(
+  'c0 option
+)
+"map_fold.ml" 79 2798 2815 "map_fold.ml" 79 2798 2825
+type(
+  'b1 -> 'b1 Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"map_fold.ml" 79 2798 2826 "map_fold.ml" 79 2798 2827
+type(
+  'b1
+)
+ident(
+  int_ref r "map_fold.ml" 78 2762 2771 "map_fold.ml" 78 2762 2772
+)
+"map_fold.ml" 79 2798 2828 "map_fold.ml" 79 2798 2835
+type(
+  'b1 Stack.t
+)
+ident(
+  int_ref pending "map_fold.ml" 74 2632 2640 "map_fold.ml" 74 2632 2647
+)
+"map_fold.ml" 79 2798 2815 "map_fold.ml" 79 2798 2835
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 79 2798 2837 "map_fold.ml" 79 2798 2839
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 79 2798 2815 "map_fold.ml" 79 2798 2839
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 80 2840 2854 "map_fold.ml" 80 2840 2855
+type(
+  'c0
+)
+ident(
+  def v "map_fold.ml" 80 2840 2859 "map_fold.ml" 80 2840 2889
+)
+"map_fold.ml" 80 2840 2849 "map_fold.ml" 80 2840 2855
+type(
+  'c0 option
+)
+"map_fold.ml" 80 2840 2859 "map_fold.ml" 80 2840 2862
+type(
+  'c0 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+)
+"map_fold.ml" 80 2840 2863 "map_fold.ml" 80 2840 2865
+type(
+  'c0 option ref -> 'c0 option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"map_fold.ml" 80 2840 2866 "map_fold.ml" 80 2840 2870
+type(
+  'c0 option
+)
+"map_fold.ml" 80 2840 2859 "map_fold.ml" 80 2840 2870
+type(
+  unit
+)
+"map_fold.ml" 80 2840 2879 "map_fold.ml" 80 2840 2880
+type(
+  'c0
+)
+ident(
+  int_ref v "map_fold.ml" 80 2840 2854 "map_fold.ml" 80 2840 2855
+)
+"map_fold.ml" 80 2840 2882 "map_fold.ml" 80 2840 2883
+type(
+  'b1
+)
+ident(
+  int_ref r "map_fold.ml" 78 2762 2771 "map_fold.ml" 78 2762 2772
+)
+"map_fold.ml" 80 2840 2878 "map_fold.ml" 80 2840 2884
+type(
+  'c0 * 'b1
+)
+"map_fold.ml" 80 2840 2873 "map_fold.ml" 80 2840 2884
+type(
+  ('a1, 'c0 * 'b1) map_or_fold
+)
+"map_fold.ml" 80 2840 2886 "map_fold.ml" 80 2840 2888
+type(
+  unit
+)
+"map_fold.ml" 80 2840 2873 "map_fold.ml" 80 2840 2888
+type(
+  ('a1, 'c0 * 'b1) map_or_fold * unit
+)
+"map_fold.ml" 80 2840 2872 "map_fold.ml" 80 2840 2889
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 80 2840 2859 "map_fold.ml" 80 2840 2889
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 78 2762 2776 "map_fold.ml" 81 2890 2898
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 82 2899 2909 "map_fold.ml" 82 2899 2910
+type(
+  'c0
+)
+ident(
+  def r "map_fold.ml" 83 2915 2922 "map_fold.ml" 89 3085 3095
+)
+"map_fold.ml" 82 2899 2904 "map_fold.ml" 82 2899 2910
+type(
+  ('b1, 'c0) map_or_fold
+)
+"map_fold.ml" 83 2915 2930 "map_fold.ml" 83 2915 2931
+type(
+  'c0 option ref -> 'c0 option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 83 2915 2931 "map_fold.ml" 83 2915 2934
+type(
+  'c0 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+)
+"map_fold.ml" 83 2915 2930 "map_fold.ml" 83 2915 2934
+type(
+  'c0 option
+)
+"map_fold.ml" 83 2915 2935 "map_fold.ml" 83 2915 2936
+type(
+  'c0 option -> 'c0 option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"map_fold.ml" 83 2915 2937 "map_fold.ml" 83 2915 2941
+type(
+  'c0 option
+)
+"map_fold.ml" 83 2915 2929 "map_fold.ml" 83 2915 2942
+type(
+  bool
+)
+"map_fold.ml" 83 2915 2922 "map_fold.ml" 83 2915 2942
+type(
+  unit
+)
+"map_fold.ml" 84 2944 2954 "map_fold.ml" 84 2944 2957
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"map_fold.ml" 84 2944 2959 "map_fold.ml" 84 2944 2973
+type(
+  'b1 Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"map_fold.ml" 84 2944 2974 "map_fold.ml" 84 2944 2981
+type(
+  'b1 Stack.t
+)
+ident(
+  int_ref pending "map_fold.ml" 74 2632 2640 "map_fold.ml" 74 2632 2647
+)
+"map_fold.ml" 84 2944 2958 "map_fold.ml" 84 2944 2982
+call(
+  stack
+)
+type(
+  bool
+)
+"map_fold.ml" 84 2944 2954 "map_fold.ml" 84 2944 2982
+type(
+  bool
+)
+"map_fold.ml" 85 2988 3004 "map_fold.ml" 85 2988 3005
+type(
+  'c0
+)
+ident(
+  int_ref r "map_fold.ml" 82 2899 2909 "map_fold.ml" 82 2899 2910
+)
+"map_fold.ml" 85 2988 3007 "map_fold.ml" 85 2988 3016
+type(
+  'b1 Stack.t -> 'b1
+)
+ident(
+  ext_ref Stack.pop
+)
+"map_fold.ml" 85 2988 3017 "map_fold.ml" 85 2988 3024
+type(
+  'b1 Stack.t
+)
+ident(
+  int_ref pending "map_fold.ml" 74 2632 2640 "map_fold.ml" 74 2632 2647
+)
+"map_fold.ml" 85 2988 3007 "map_fold.ml" 85 2988 3024
+call(
+  stack
+)
+type(
+  'b1
+)
+"map_fold.ml" 85 2988 3003 "map_fold.ml" 85 2988 3025
+type(
+  'c0 * 'b1
+)
+"map_fold.ml" 85 2988 2998 "map_fold.ml" 85 2988 3025
+type(
+  ('a1, 'c0 * 'b1) map_or_fold
+)
+"map_fold.ml" 85 2988 3027 "map_fold.ml" 85 2988 3029
+type(
+  unit
+)
+"map_fold.ml" 85 2988 2998 "map_fold.ml" 85 2988 3029
+type(
+  ('a1, 'c0 * 'b1) map_or_fold * unit
+)
+"map_fold.ml" 85 2988 2997 "map_fold.ml" 85 2988 3030
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 87 3049 3058 "map_fold.ml" 87 3049 3061
+type(
+  'c0 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+)
+"map_fold.ml" 87 3049 3062 "map_fold.ml" 87 3049 3064
+type(
+  'c0 option ref -> 'c0 option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"map_fold.ml" 87 3049 3070 "map_fold.ml" 87 3049 3071
+type(
+  'c0
+)
+ident(
+  int_ref r "map_fold.ml" 82 2899 2909 "map_fold.ml" 82 2899 2910
+)
+"map_fold.ml" 87 3049 3065 "map_fold.ml" 87 3049 3071
+type(
+  'c0 option
+)
+"map_fold.ml" 87 3049 3058 "map_fold.ml" 87 3049 3071
+type(
+  unit
+)
+"map_fold.ml" 88 3073 3082 "map_fold.ml" 88 3073 3084
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 86 3031 3043 "map_fold.ml" 89 3085 3095
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 84 2944 2951 "map_fold.ml" 89 3085 3095
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 83 2915 2922 "map_fold.ml" 89 3085 3095
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 77 2723 2749 "map_fold.ml" 89 3085 3095
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 77 2723 2737 "map_fold.ml" 89 3085 3096
+type(
+  ('a1, 'c0 * 'b1) map_or_fold * unit ->
+  ('b1, 'c0) map_or_fold -> (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 90 3097 3104 "map_fold.ml" 90 3097 3112
+type(
+  ('a1 -> ('a1, 'c0 * 'b1) map_or_fold * unit) ->
+  'a1 list -> (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 90 3097 3118 "map_fold.ml" 90 3097 3119
+type(
+  'a1
+)
+ident(
+  def x "map_fold.ml" 90 3097 3123 "map_fold.ml" 90 3097 3132
+)
+"map_fold.ml" 90 3097 3127 "map_fold.ml" 90 3097 3128
+type(
+  'a1
+)
+ident(
+  int_ref x "map_fold.ml" 90 3097 3118 "map_fold.ml" 90 3097 3119
+)
+"map_fold.ml" 90 3097 3123 "map_fold.ml" 90 3097 3128
+type(
+  ('a1, 'c0 * 'b1) map_or_fold
+)
+"map_fold.ml" 90 3097 3130 "map_fold.ml" 90 3097 3132
+type(
+  unit
+)
+"map_fold.ml" 90 3097 3123 "map_fold.ml" 90 3097 3132
+type(
+  ('a1, 'c0 * 'b1) map_or_fold * unit
+)
+"map_fold.ml" 90 3097 3113 "map_fold.ml" 90 3097 3133
+type(
+  'a1 -> ('a1, 'c0 * 'b1) map_or_fold * unit
+)
+"map_fold.ml" 90 3097 3134 "map_fold.ml" 90 3097 3135
+type(
+  'a1 list
+)
+ident(
+  int_ref l "map_fold.ml" 72 2528 2596 "map_fold.ml" 72 2528 2597
+)
+"map_fold.ml" 90 3097 3103 "map_fold.ml" 90 3097 3136
+call(
+  stack
+)
+type(
+  (('a1, 'c0 * 'b1) map_or_fold * unit) list
+)
+"map_fold.ml" 75 2669 2673 "map_fold.ml" 90 3097 3136
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 92 3188 3198 "map_fold.ml" 92 3188 3199
+type(
+  'c0 option ref -> 'c0 option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 92 3188 3199 "map_fold.ml" 92 3188 3202
+type(
+  'c0 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 73 2600 2608 "map_fold.ml" 73 2600 2611
+)
+"map_fold.ml" 92 3188 3198 "map_fold.ml" 92 3188 3202
+type(
+  'c0 option
+)
+"map_fold.ml" 93 3208 3221 "map_fold.ml" 93 3208 3222
+type(
+  'c0
+)
+ident(
+  def r "map_fold.ml" 93 3208 3226 "map_fold.ml" 93 3208 3227
+)
+"map_fold.ml" 93 3208 3216 "map_fold.ml" 93 3208 3222
+type(
+  'c0 option
+)
+"map_fold.ml" 93 3208 3226 "map_fold.ml" 93 3208 3227
+type(
+  'c0
+)
+ident(
+  int_ref r "map_fold.ml" 93 3208 3221 "map_fold.ml" 93 3208 3222
+)
+"map_fold.ml" 94 3228 3236 "map_fold.ml" 94 3228 3240
+type(
+  'c0 option
+)
+"map_fold.ml" 94 3228 3251 "map_fold.ml" 94 3228 3256
+type(
+  bool
+)
+"map_fold.ml" 94 3228 3244 "map_fold.ml" 94 3228 3256
+type(
+  'c0
+)
+"map_fold.ml" 92 3188 3192 "map_fold.ml" 94 3228 3256
+type(
+  'c0
+)
+"map_fold.ml" 75 2669 2673 "map_fold.ml" 94 3228 3256
+type(
+  'c0
+)
+"map_fold.ml" 74 2632 2636 "map_fold.ml" 94 3228 3256
+type(
+  'c0
+)
+"map_fold.ml" 73 2600 2604 "map_fold.ml" 94 3228 3256
+type(
+  'c0
+)
+"map_fold.ml" 96 3258 3264 "map_fold.ml" 96 3258 3275
+type(
+  f:('a2 -> 'b2) -> fold:('b2 -> 'b2 -> 'b2) -> 'b2 -> 'a2 list -> 'b2
+)
+ident(
+  def map_fold_ac "map_fold.ml" 113 3721 3723 "map_fold.ml" 149 4877 4880
+)
+"map_fold.ml" 96 3258 3278 "map_fold.ml" 96 3258 3279
+type(
+  'a2 -> 'b2
+)
+ident(
+  def f "map_fold.ml" 96 3258 3292 "map_fold.ml" 111 3691 3719
+)
+"map_fold.ml" 96 3258 3294 "map_fold.ml" 96 3258 3298
+type(
+  'b2 -> 'b2 -> 'b2
+)
+ident(
+  def fold "map_fold.ml" 96 3258 3317 "map_fold.ml" 111 3691 3719
+)
+"map_fold.ml" 96 3258 3317 "map_fold.ml" 96 3258 3320
+type(
+  'b2
+)
+ident(
+  def acc "map_fold.ml" 96 3258 3321 "map_fold.ml" 111 3691 3719
+)
+"map_fold.ml" 96 3258 3321 "map_fold.ml" 96 3258 3322
+type(
+  'a2 list
+)
+ident(
+  def l "map_fold.ml" 97 3325 3329 "map_fold.ml" 111 3691 3719
+)
+"map_fold.ml" 97 3325 3333 "map_fold.ml" 97 3325 3336
+type(
+  'b2 option ref
+)
+ident(
+  def acc "map_fold.ml" 98 3357 3361 "map_fold.ml" 111 3691 3719
+)
+"map_fold.ml" 97 3325 3339 "map_fold.ml" 97 3325 3342
+type(
+  'b2 option -> 'b2 option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"map_fold.ml" 97 3325 3349 "map_fold.ml" 97 3325 3352
+type(
+  'b2
+)
+ident(
+  int_ref acc "map_fold.ml" 96 3258 3317 "map_fold.ml" 96 3258 3320
+)
+"map_fold.ml" 97 3325 3343 "map_fold.ml" 97 3325 3353
+type(
+  'b2 option
+)
+"map_fold.ml" 97 3325 3339 "map_fold.ml" 97 3325 3353
+type(
+  'b2 option ref
+)
+"map_fold.ml" 98 3357 3361 "map_fold.ml" 98 3357 3370
+type(
+  worker:(('a2, 'b2 * 'b2) map_or_fold -> 'b2) ->
+  master:(('a2, 'b2 * 'b2) map_or_fold * unit ->
+          'b2 -> (('a2, 'b2 * 'b2) map_or_fold * unit) list) ->
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list -> unit
+)
+ident(
+  int_ref X.compute "map_fold.ml" 31 1429 1434 "map_fold.ml" 35 1554 1565
+)
+"map_fold.ml" 99 3371 3386 "map_fold.ml" 99 3371 3403
+type(
+  ('a2 -> 'b2) -> ('b2 -> 'b2 -> 'b2) -> ('a2, 'b2 * 'b2) map_or_fold -> 'b2
+)
+ident(
+  int_ref map_fold_wrapper2 "map_fold.ml" 25 1316 1320 "map_fold.ml" 25 1316 1337
+)
+"map_fold.ml" 99 3371 3404 "map_fold.ml" 99 3371 3405
+type(
+  'a2 -> 'b2
+)
+ident(
+  int_ref f "map_fold.ml" 96 3258 3278 "map_fold.ml" 96 3258 3279
+)
+"map_fold.ml" 99 3371 3406 "map_fold.ml" 99 3371 3410
+type(
+  'b2 -> 'b2 -> 'b2
+)
+ident(
+  int_ref fold "map_fold.ml" 96 3258 3294 "map_fold.ml" 96 3258 3298
+)
+"map_fold.ml" 99 3371 3385 "map_fold.ml" 99 3371 3411
+call(
+  stack
+)
+type(
+  ('a2, 'b2 * 'b2) map_or_fold -> 'b2
+)
+"map_fold.ml" 100 3412 3431 "map_fold.ml" 100 3412 3432
+type(
+  ('a2, 'b2 * 'b2) map_or_fold * unit
+)
+"map_fold.ml" 100 3412 3433 "map_fold.ml" 100 3412 3434
+type(
+  'b2
+)
+ident(
+  def r "map_fold.ml" 101 3439 3442 "map_fold.ml" 106 3534 3558
+)
+"map_fold.ml" 101 3439 3448 "map_fold.ml" 101 3439 3449
+type(
+  'b2 option ref -> 'b2 option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 101 3439 3449 "map_fold.ml" 101 3439 3452
+type(
+  'b2 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 97 3325 3333 "map_fold.ml" 97 3325 3336
+)
+"map_fold.ml" 101 3439 3448 "map_fold.ml" 101 3439 3452
+type(
+  'b2 option
+)
+"map_fold.ml" 102 3458 3463 "map_fold.ml" 102 3458 3467
+type(
+  'b2 option
+)
+"map_fold.ml" 103 3472 3479 "map_fold.ml" 103 3472 3482
+type(
+  'b2 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 97 3325 3333 "map_fold.ml" 97 3325 3336
+)
+"map_fold.ml" 103 3472 3483 "map_fold.ml" 103 3472 3485
+type(
+  'b2 option ref -> 'b2 option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"map_fold.ml" 103 3472 3491 "map_fold.ml" 103 3472 3492
+type(
+  'b2
+)
+ident(
+  int_ref r "map_fold.ml" 100 3412 3433 "map_fold.ml" 100 3412 3434
+)
+"map_fold.ml" 103 3472 3486 "map_fold.ml" 103 3472 3492
+type(
+  'b2 option
+)
+"map_fold.ml" 103 3472 3479 "map_fold.ml" 103 3472 3492
+type(
+  unit
+)
+"map_fold.ml" 103 3472 3494 "map_fold.ml" 103 3472 3496
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 103 3472 3479 "map_fold.ml" 103 3472 3496
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 104 3497 3507 "map_fold.ml" 104 3497 3508
+type(
+  'b2
+)
+ident(
+  def v "map_fold.ml" 105 3513 3520 "map_fold.ml" 106 3534 3558
+)
+"map_fold.ml" 104 3497 3502 "map_fold.ml" 104 3497 3508
+type(
+  'b2 option
+)
+"map_fold.ml" 105 3513 3520 "map_fold.ml" 105 3513 3523
+type(
+  'b2 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 97 3325 3333 "map_fold.ml" 97 3325 3336
+)
+"map_fold.ml" 105 3513 3524 "map_fold.ml" 105 3513 3526
+type(
+  'b2 option ref -> 'b2 option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"map_fold.ml" 105 3513 3527 "map_fold.ml" 105 3513 3531
+type(
+  'b2 option
+)
+"map_fold.ml" 105 3513 3520 "map_fold.ml" 105 3513 3531
+type(
+  unit
+)
+"map_fold.ml" 106 3534 3548 "map_fold.ml" 106 3534 3549
+type(
+  'b2
+)
+ident(
+  int_ref v "map_fold.ml" 104 3497 3507 "map_fold.ml" 104 3497 3508
+)
+"map_fold.ml" 106 3534 3551 "map_fold.ml" 106 3534 3552
+type(
+  'b2
+)
+ident(
+  int_ref r "map_fold.ml" 100 3412 3433 "map_fold.ml" 100 3412 3434
+)
+"map_fold.ml" 106 3534 3547 "map_fold.ml" 106 3534 3553
+type(
+  'b2 * 'b2
+)
+"map_fold.ml" 106 3534 3542 "map_fold.ml" 106 3534 3553
+type(
+  ('a2, 'b2 * 'b2) map_or_fold
+)
+"map_fold.ml" 106 3534 3555 "map_fold.ml" 106 3534 3557
+type(
+  unit
+)
+"map_fold.ml" 106 3534 3542 "map_fold.ml" 106 3534 3557
+type(
+  ('a2, 'b2 * 'b2) map_or_fold * unit
+)
+"map_fold.ml" 106 3534 3541 "map_fold.ml" 106 3534 3558
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 105 3513 3520 "map_fold.ml" 106 3534 3558
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 101 3439 3442 "map_fold.ml" 106 3534 3558
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 100 3412 3426 "map_fold.ml" 106 3534 3559
+type(
+  ('a2, 'b2 * 'b2) map_or_fold * unit ->
+  'b2 -> (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 107 3560 3567 "map_fold.ml" 107 3560 3575
+type(
+  ('a2 -> ('a2, 'b2 * 'b2) map_or_fold * unit) ->
+  'a2 list -> (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 107 3560 3581 "map_fold.ml" 107 3560 3582
+type(
+  'a2
+)
+ident(
+  def x "map_fold.ml" 107 3560 3586 "map_fold.ml" 107 3560 3595
+)
+"map_fold.ml" 107 3560 3590 "map_fold.ml" 107 3560 3591
+type(
+  'a2
+)
+ident(
+  int_ref x "map_fold.ml" 107 3560 3581 "map_fold.ml" 107 3560 3582
+)
+"map_fold.ml" 107 3560 3586 "map_fold.ml" 107 3560 3591
+type(
+  ('a2, 'b2 * 'b2) map_or_fold
+)
+"map_fold.ml" 107 3560 3593 "map_fold.ml" 107 3560 3595
+type(
+  unit
+)
+"map_fold.ml" 107 3560 3586 "map_fold.ml" 107 3560 3595
+type(
+  ('a2, 'b2 * 'b2) map_or_fold * unit
+)
+"map_fold.ml" 107 3560 3576 "map_fold.ml" 107 3560 3596
+type(
+  'a2 -> ('a2, 'b2 * 'b2) map_or_fold * unit
+)
+"map_fold.ml" 107 3560 3597 "map_fold.ml" 107 3560 3598
+type(
+  'a2 list
+)
+ident(
+  int_ref l "map_fold.ml" 96 3258 3321 "map_fold.ml" 96 3258 3322
+)
+"map_fold.ml" 107 3560 3566 "map_fold.ml" 107 3560 3599
+call(
+  stack
+)
+type(
+  (('a2, 'b2 * 'b2) map_or_fold * unit) list
+)
+"map_fold.ml" 98 3357 3361 "map_fold.ml" 107 3560 3599
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 109 3651 3661 "map_fold.ml" 109 3651 3662
+type(
+  'b2 option ref -> 'b2 option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 109 3651 3662 "map_fold.ml" 109 3651 3665
+type(
+  'b2 option ref
+)
+ident(
+  int_ref acc "map_fold.ml" 97 3325 3333 "map_fold.ml" 97 3325 3336
+)
+"map_fold.ml" 109 3651 3661 "map_fold.ml" 109 3651 3665
+type(
+  'b2 option
+)
+"map_fold.ml" 110 3671 3684 "map_fold.ml" 110 3671 3685
+type(
+  'b2
+)
+ident(
+  def r "map_fold.ml" 110 3671 3689 "map_fold.ml" 110 3671 3690
+)
+"map_fold.ml" 110 3671 3679 "map_fold.ml" 110 3671 3685
+type(
+  'b2 option
+)
+"map_fold.ml" 110 3671 3689 "map_fold.ml" 110 3671 3690
+type(
+  'b2
+)
+ident(
+  int_ref r "map_fold.ml" 110 3671 3684 "map_fold.ml" 110 3671 3685
+)
+"map_fold.ml" 111 3691 3699 "map_fold.ml" 111 3691 3703
+type(
+  'b2 option
+)
+"map_fold.ml" 111 3691 3714 "map_fold.ml" 111 3691 3719
+type(
+  bool
+)
+"map_fold.ml" 111 3691 3707 "map_fold.ml" 111 3691 3719
+type(
+  'b2
+)
+"map_fold.ml" 109 3651 3655 "map_fold.ml" 111 3691 3719
+type(
+  'b2
+)
+"map_fold.ml" 98 3357 3361 "map_fold.ml" 111 3691 3719
+type(
+  'b2
+)
+"map_fold.ml" 97 3325 3329 "map_fold.ml" 111 3691 3719
+type(
+  'b2
+)
+"map_fold.ml" 113 3721 3727 "map_fold.ml" 113 3721 3737
+type(
+  f:('a3 -> 'b3) -> fold:('b3 -> 'b3 -> 'b3) -> 'b3 -> 'a3 list -> 'b3
+)
+ident(
+  def map_fold_a "map_fold.ml" 147 4806 4875 "map_fold.ml" 149 4877 4880
+)
+"map_fold.ml" 113 3721 3740 "map_fold.ml" 113 3721 3741
+type(
+  'a3 -> 'b3
+)
+ident(
+  def f "map_fold.ml" 113 3721 3754 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 113 3721 3756 "map_fold.ml" 113 3721 3760
+type(
+  'b3 -> 'b3 -> 'b3
+)
+ident(
+  def fold "map_fold.ml" 113 3721 3779 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 113 3721 3779 "map_fold.ml" 113 3721 3782
+type(
+  'b3
+)
+ident(
+  def acc "map_fold.ml" 113 3721 3783 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 113 3721 3783 "map_fold.ml" 113 3721 3784
+type(
+  'a3 list
+)
+ident(
+  def l "map_fold.ml" 114 3787 3791 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 114 3787 3795 "map_fold.ml" 114 3787 3800
+type(
+  (('a3, 'd) map_or_fold * (int * int)) list
+)
+ident(
+  def tasks "map_fold.ml" 120 4001 4005 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 115 3804 3814 "map_fold.ml" 115 3804 3815
+type(
+  int ref
+)
+ident(
+  def i "map_fold.ml" 116 3828 3834 "map_fold.ml" 116 3828 3879
+)
+"map_fold.ml" 115 3804 3818 "map_fold.ml" 115 3804 3821
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"map_fold.ml" 115 3804 3822 "map_fold.ml" 115 3804 3823
+type(
+  int
+)
+"map_fold.ml" 115 3804 3818 "map_fold.ml" 115 3804 3823
+type(
+  int ref
+)
+"map_fold.ml" 116 3828 3834 "map_fold.ml" 116 3828 3842
+type(
+  ('a3 -> ('a3, 'd) map_or_fold * (int * int)) ->
+  'a3 list -> (('a3, 'd) map_or_fold * (int * int)) list
+)
+ident(
+  ext_ref List.map
+)
+"map_fold.ml" 116 3828 3848 "map_fold.ml" 116 3828 3849
+type(
+  'a3
+)
+ident(
+  def x "map_fold.ml" 116 3828 3853 "map_fold.ml" 116 3828 3876
+)
+"map_fold.ml" 116 3828 3853 "map_fold.ml" 116 3828 3857
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"map_fold.ml" 116 3828 3858 "map_fold.ml" 116 3828 3859
+type(
+  int ref
+)
+ident(
+  int_ref i "map_fold.ml" 115 3804 3814 "map_fold.ml" 115 3804 3815
+)
+"map_fold.ml" 116 3828 3853 "map_fold.ml" 116 3828 3859
+type(
+  unit
+)
+"map_fold.ml" 116 3828 3865 "map_fold.ml" 116 3828 3866
+type(
+  'a3
+)
+ident(
+  int_ref x "map_fold.ml" 116 3828 3848 "map_fold.ml" 116 3828 3849
+)
+"map_fold.ml" 116 3828 3861 "map_fold.ml" 116 3828 3866
+type(
+  ('a3, 'd) map_or_fold
+)
+"map_fold.ml" 116 3828 3869 "map_fold.ml" 116 3828 3870
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 116 3828 3870 "map_fold.ml" 116 3828 3871
+type(
+  int ref
+)
+ident(
+  int_ref i "map_fold.ml" 115 3804 3814 "map_fold.ml" 115 3804 3815
+)
+"map_fold.ml" 116 3828 3869 "map_fold.ml" 116 3828 3871
+type(
+  int
+)
+"map_fold.ml" 116 3828 3873 "map_fold.ml" 116 3828 3874
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"map_fold.ml" 116 3828 3874 "map_fold.ml" 116 3828 3875
+type(
+  int ref
+)
+ident(
+  int_ref i "map_fold.ml" 115 3804 3814 "map_fold.ml" 115 3804 3815
+)
+"map_fold.ml" 116 3828 3873 "map_fold.ml" 116 3828 3875
+type(
+  int
+)
+"map_fold.ml" 116 3828 3868 "map_fold.ml" 116 3828 3876
+type(
+  int * int
+)
+"map_fold.ml" 116 3828 3861 "map_fold.ml" 116 3828 3876
+type(
+  ('a3, 'd) map_or_fold * (int * int)
+)
+"map_fold.ml" 116 3828 3853 "map_fold.ml" 116 3828 3876
+type(
+  ('a3, 'd) map_or_fold * (int * int)
+)
+"map_fold.ml" 116 3828 3843 "map_fold.ml" 116 3828 3877
+type(
+  'a3 -> ('a3, 'd) map_or_fold * (int * int)
+)
+"map_fold.ml" 116 3828 3878 "map_fold.ml" 116 3828 3879
+type(
+  'a3 list
+)
+ident(
+  int_ref l "map_fold.ml" 113 3721 3783 "map_fold.ml" 113 3721 3784
+)
+"map_fold.ml" 116 3828 3834 "map_fold.ml" 116 3828 3879
+call(
+  stack
+)
+type(
+  (('a3, 'd) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 115 3804 3810 "map_fold.ml" 116 3828 3879
+type(
+  (('a3, 'd) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  def results "map_fold.ml" 121 4041 4045 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 120 4001 4019 "map_fold.ml" 120 4001 4033
+type(
+  ?random:bool -> int -> (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"map_fold.ml" 120 4001 4034 "map_fold.ml" 120 4001 4036
+type(
+  int
+)
+"map_fold.ml" 120 4001 4019 "map_fold.ml" 120 4001 4036
+call(
+  stack
+)
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+"map_fold.ml" 121 4041 4049 "map_fold.ml" 121 4041 4054
+type(
+  int -> int -> 'b3 -> (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+ident(
+  def merge "map_fold.ml" 140 4555 4559 "map_fold.ml" 147 4806 4875
+)
+"map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+type(
+  int
+)
+ident(
+  def i "map_fold.ml" 121 4041 4057 "map_fold.ml" 138 4538 4547
+)
+"map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+type(
+  int
+)
+ident(
+  def j "map_fold.ml" 121 4041 4059 "map_fold.ml" 138 4538 4547
+)
+"map_fold.ml" 121 4041 4059 "map_fold.ml" 121 4041 4060
+type(
+  'b3
+)
+ident(
+  def r "map_fold.ml" 122 4064 4070 "map_fold.ml" 138 4538 4547
+)
+"map_fold.ml" 122 4064 4073 "map_fold.ml" 122 4064 4084
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"map_fold.ml" 122 4064 4085 "map_fold.ml" 122 4064 4092
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 122 4064 4094 "map_fold.ml" 122 4064 4095
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 122 4064 4095 "map_fold.ml" 122 4064 4096
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"map_fold.ml" 122 4064 4096 "map_fold.ml" 122 4064 4097
+type(
+  int
+)
+"map_fold.ml" 122 4064 4093 "map_fold.ml" 122 4064 4098
+type(
+  int
+)
+"map_fold.ml" 122 4064 4073 "map_fold.ml" 122 4064 4098
+call(
+  stack
+)
+type(
+  bool
+)
+"map_fold.ml" 123 4110 4115 "map_fold.ml" 123 4110 4116
+type(
+  int
+)
+ident(
+  def l "map_fold.ml" 124 4155 4156 "map_fold.ml" 127 4229 4251
+)
+"map_fold.ml" 123 4110 4118 "map_fold.ml" 123 4110 4119
+type(
+  int
+)
+ident(
+  def h "map_fold.ml" 124 4155 4156 "map_fold.ml" 127 4229 4251
+)
+"map_fold.ml" 123 4110 4121 "map_fold.ml" 123 4110 4122
+type(
+  'b3
+)
+ident(
+  def x "map_fold.ml" 124 4155 4156 "map_fold.ml" 127 4229 4251
+)
+"map_fold.ml" 123 4110 4115 "map_fold.ml" 123 4110 4122
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 123 4110 4125 "map_fold.ml" 123 4110 4137
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> int * int * 'b3
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"map_fold.ml" 123 4110 4138 "map_fold.ml" 123 4110 4145
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 123 4110 4147 "map_fold.ml" 123 4110 4148
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 123 4110 4148 "map_fold.ml" 123 4110 4149
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"map_fold.ml" 123 4110 4149 "map_fold.ml" 123 4110 4150
+type(
+  int
+)
+"map_fold.ml" 123 4110 4146 "map_fold.ml" 123 4110 4151
+type(
+  int
+)
+"map_fold.ml" 123 4110 4125 "map_fold.ml" 123 4110 4151
+call(
+  stack
+)
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 124 4155 4164 "map_fold.ml" 124 4155 4165
+type(
+  int
+)
+ident(
+  int_ref h "map_fold.ml" 123 4110 4118 "map_fold.ml" 123 4110 4119
+)
+"map_fold.ml" 124 4155 4166 "map_fold.ml" 124 4155 4167
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"map_fold.ml" 124 4155 4168 "map_fold.ml" 124 4155 4169
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 124 4155 4169 "map_fold.ml" 124 4155 4170
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"map_fold.ml" 124 4155 4170 "map_fold.ml" 124 4155 4171
+type(
+  int
+)
+"map_fold.ml" 124 4155 4168 "map_fold.ml" 124 4155 4171
+type(
+  int
+)
+"map_fold.ml" 124 4155 4163 "map_fold.ml" 124 4155 4172
+type(
+  bool
+)
+"map_fold.ml" 124 4155 4156 "map_fold.ml" 124 4155 4172
+type(
+  unit
+)
+"map_fold.ml" 125 4174 4175 "map_fold.ml" 125 4174 4189
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"map_fold.ml" 125 4174 4190 "map_fold.ml" 125 4174 4197
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 125 4174 4198 "map_fold.ml" 125 4174 4199
+type(
+  int
+)
+ident(
+  int_ref l "map_fold.ml" 123 4110 4115 "map_fold.ml" 123 4110 4116
+)
+"map_fold.ml" 125 4174 4175 "map_fold.ml" 125 4174 4199
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 126 4202 4203 "map_fold.ml" 126 4202 4217
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"map_fold.ml" 126 4202 4218 "map_fold.ml" 126 4202 4225
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 126 4202 4226 "map_fold.ml" 126 4202 4227
+type(
+  int
+)
+ident(
+  int_ref h "map_fold.ml" 123 4110 4118 "map_fold.ml" 123 4110 4119
+)
+"map_fold.ml" 126 4202 4203 "map_fold.ml" 126 4202 4227
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 127 4229 4237 "map_fold.ml" 127 4229 4238
+type(
+  'b3
+)
+ident(
+  int_ref x "map_fold.ml" 123 4110 4121 "map_fold.ml" 123 4110 4122
+)
+"map_fold.ml" 127 4229 4240 "map_fold.ml" 127 4229 4241
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 121 4041 4059 "map_fold.ml" 121 4041 4060
+)
+"map_fold.ml" 127 4229 4236 "map_fold.ml" 127 4229 4242
+type(
+  'b3 * 'b3
+)
+"map_fold.ml" 127 4229 4231 "map_fold.ml" 127 4229 4242
+type(
+  ('e, 'b3 * 'b3) map_or_fold
+)
+"map_fold.ml" 127 4229 4245 "map_fold.ml" 127 4229 4246
+type(
+  int
+)
+ident(
+  int_ref l "map_fold.ml" 123 4110 4115 "map_fold.ml" 123 4110 4116
+)
+"map_fold.ml" 127 4229 4248 "map_fold.ml" 127 4229 4249
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 127 4229 4244 "map_fold.ml" 127 4229 4250
+type(
+  int * int
+)
+"map_fold.ml" 127 4229 4231 "map_fold.ml" 127 4229 4250
+type(
+  ('e, 'b3 * 'b3) map_or_fold * (int * int)
+)
+"map_fold.ml" 127 4229 4230 "map_fold.ml" 127 4229 4251
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 126 4202 4203 "map_fold.ml" 127 4229 4251
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 125 4174 4175 "map_fold.ml" 127 4229 4251
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 124 4155 4156 "map_fold.ml" 127 4229 4251
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 122 4064 4104 "map_fold.ml" 128 4252 4261
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 128 4252 4270 "map_fold.ml" 128 4252 4281
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"map_fold.ml" 128 4252 4282 "map_fold.ml" 128 4252 4289
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 128 4252 4291 "map_fold.ml" 128 4252 4292
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 128 4252 4292 "map_fold.ml" 128 4252 4293
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"map_fold.ml" 128 4252 4293 "map_fold.ml" 128 4252 4294
+type(
+  int
+)
+"map_fold.ml" 128 4252 4290 "map_fold.ml" 128 4252 4295
+type(
+  int
+)
+"map_fold.ml" 128 4252 4270 "map_fold.ml" 128 4252 4295
+call(
+  stack
+)
+type(
+  bool
+)
+"map_fold.ml" 129 4307 4312 "map_fold.ml" 129 4307 4313
+type(
+  int
+)
+ident(
+  def l "map_fold.ml" 130 4352 4353 "map_fold.ml" 133 4426 4448
+)
+"map_fold.ml" 129 4307 4315 "map_fold.ml" 129 4307 4316
+type(
+  int
+)
+ident(
+  def h "map_fold.ml" 130 4352 4353 "map_fold.ml" 133 4426 4448
+)
+"map_fold.ml" 129 4307 4318 "map_fold.ml" 129 4307 4319
+type(
+  'b3
+)
+ident(
+  def x "map_fold.ml" 130 4352 4353 "map_fold.ml" 133 4426 4448
+)
+"map_fold.ml" 129 4307 4312 "map_fold.ml" 129 4307 4319
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 129 4307 4322 "map_fold.ml" 129 4307 4334
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> int * int * 'b3
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"map_fold.ml" 129 4307 4335 "map_fold.ml" 129 4307 4342
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 129 4307 4344 "map_fold.ml" 129 4307 4345
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 129 4307 4345 "map_fold.ml" 129 4307 4346
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"map_fold.ml" 129 4307 4346 "map_fold.ml" 129 4307 4347
+type(
+  int
+)
+"map_fold.ml" 129 4307 4343 "map_fold.ml" 129 4307 4348
+type(
+  int
+)
+"map_fold.ml" 129 4307 4322 "map_fold.ml" 129 4307 4348
+call(
+  stack
+)
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 130 4352 4361 "map_fold.ml" 130 4352 4362
+type(
+  int
+)
+ident(
+  int_ref l "map_fold.ml" 129 4307 4312 "map_fold.ml" 129 4307 4313
+)
+"map_fold.ml" 130 4352 4363 "map_fold.ml" 130 4352 4364
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"map_fold.ml" 130 4352 4365 "map_fold.ml" 130 4352 4366
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 130 4352 4366 "map_fold.ml" 130 4352 4367
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"map_fold.ml" 130 4352 4367 "map_fold.ml" 130 4352 4368
+type(
+  int
+)
+"map_fold.ml" 130 4352 4365 "map_fold.ml" 130 4352 4368
+type(
+  int
+)
+"map_fold.ml" 130 4352 4360 "map_fold.ml" 130 4352 4369
+type(
+  bool
+)
+"map_fold.ml" 130 4352 4353 "map_fold.ml" 130 4352 4369
+type(
+  unit
+)
+"map_fold.ml" 131 4371 4372 "map_fold.ml" 131 4371 4386
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"map_fold.ml" 131 4371 4387 "map_fold.ml" 131 4371 4394
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 131 4371 4395 "map_fold.ml" 131 4371 4396
+type(
+  int
+)
+ident(
+  int_ref h "map_fold.ml" 129 4307 4315 "map_fold.ml" 129 4307 4316
+)
+"map_fold.ml" 131 4371 4372 "map_fold.ml" 131 4371 4396
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 132 4399 4400 "map_fold.ml" 132 4399 4414
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"map_fold.ml" 132 4399 4415 "map_fold.ml" 132 4399 4422
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 132 4399 4423 "map_fold.ml" 132 4399 4424
+type(
+  int
+)
+ident(
+  int_ref l "map_fold.ml" 129 4307 4312 "map_fold.ml" 129 4307 4313
+)
+"map_fold.ml" 132 4399 4400 "map_fold.ml" 132 4399 4424
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 133 4426 4434 "map_fold.ml" 133 4426 4435
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 121 4041 4059 "map_fold.ml" 121 4041 4060
+)
+"map_fold.ml" 133 4426 4437 "map_fold.ml" 133 4426 4438
+type(
+  'b3
+)
+ident(
+  int_ref x "map_fold.ml" 129 4307 4318 "map_fold.ml" 129 4307 4319
+)
+"map_fold.ml" 133 4426 4433 "map_fold.ml" 133 4426 4439
+type(
+  'b3 * 'b3
+)
+"map_fold.ml" 133 4426 4428 "map_fold.ml" 133 4426 4439
+type(
+  ('e, 'b3 * 'b3) map_or_fold
+)
+"map_fold.ml" 133 4426 4442 "map_fold.ml" 133 4426 4443
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 133 4426 4445 "map_fold.ml" 133 4426 4446
+type(
+  int
+)
+ident(
+  int_ref h "map_fold.ml" 129 4307 4315 "map_fold.ml" 129 4307 4316
+)
+"map_fold.ml" 133 4426 4441 "map_fold.ml" 133 4426 4447
+type(
+  int * int
+)
+"map_fold.ml" 133 4426 4428 "map_fold.ml" 133 4426 4447
+type(
+  ('e, 'b3 * 'b3) map_or_fold * (int * int)
+)
+"map_fold.ml" 133 4426 4427 "map_fold.ml" 133 4426 4448
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 132 4399 4400 "map_fold.ml" 133 4426 4448
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 131 4371 4372 "map_fold.ml" 133 4426 4448
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 130 4352 4353 "map_fold.ml" 133 4426 4448
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 128 4252 4301 "map_fold.ml" 134 4449 4458
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 135 4470 4471 "map_fold.ml" 135 4470 4482
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> int * int * 'b3 -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"map_fold.ml" 135 4470 4483 "map_fold.ml" 135 4470 4490
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 135 4470 4491 "map_fold.ml" 135 4470 4492
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 135 4470 4494 "map_fold.ml" 135 4470 4495
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 135 4470 4496 "map_fold.ml" 135 4470 4497
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 135 4470 4498 "map_fold.ml" 135 4470 4499
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 121 4041 4059 "map_fold.ml" 121 4041 4060
+)
+"map_fold.ml" 135 4470 4493 "map_fold.ml" 135 4470 4500
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 135 4470 4471 "map_fold.ml" 135 4470 4500
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 136 4502 4503 "map_fold.ml" 136 4502 4514
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> int * int * 'b3 -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"map_fold.ml" 136 4502 4515 "map_fold.ml" 136 4502 4522
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 136 4502 4523 "map_fold.ml" 136 4502 4524
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 136 4502 4526 "map_fold.ml" 136 4502 4527
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 121 4041 4055 "map_fold.ml" 121 4041 4056
+)
+"map_fold.ml" 136 4502 4528 "map_fold.ml" 136 4502 4529
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 121 4041 4057 "map_fold.ml" 121 4041 4058
+)
+"map_fold.ml" 136 4502 4530 "map_fold.ml" 136 4502 4531
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 121 4041 4059 "map_fold.ml" 121 4041 4060
+)
+"map_fold.ml" 136 4502 4525 "map_fold.ml" 136 4502 4532
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 136 4502 4503 "map_fold.ml" 136 4502 4532
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 137 4534 4535 "map_fold.ml" 137 4534 4537
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 136 4502 4503 "map_fold.ml" 137 4534 4537
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 134 4449 4464 "map_fold.ml" 138 4538 4547
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 128 4252 4267 "map_fold.ml" 138 4538 4547
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 122 4064 4070 "map_fold.ml" 138 4538 4547
+type(
+  (('e, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 140 4555 4559 "map_fold.ml" 140 4555 4568
+type(
+  worker:(('a3, 'b3 * 'b3) map_or_fold -> 'b3) ->
+  master:(('a3, 'b3 * 'b3) map_or_fold * (int * int) ->
+          'b3 -> (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list) ->
+  (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list -> unit
+)
+ident(
+  int_ref X.compute "map_fold.ml" 31 1429 1434 "map_fold.ml" 35 1554 1565
+)
+"map_fold.ml" 141 4570 4585 "map_fold.ml" 141 4570 4602
+type(
+  ('a3 -> 'b3) -> ('b3 -> 'b3 -> 'b3) -> ('a3, 'b3 * 'b3) map_or_fold -> 'b3
+)
+ident(
+  int_ref map_fold_wrapper2 "map_fold.ml" 25 1316 1320 "map_fold.ml" 25 1316 1337
+)
+"map_fold.ml" 141 4570 4603 "map_fold.ml" 141 4570 4604
+type(
+  'a3 -> 'b3
+)
+ident(
+  int_ref f "map_fold.ml" 113 3721 3740 "map_fold.ml" 113 3721 3741
+)
+"map_fold.ml" 141 4570 4605 "map_fold.ml" 141 4570 4609
+type(
+  'b3 -> 'b3 -> 'b3
+)
+ident(
+  int_ref fold "map_fold.ml" 113 3721 3756 "map_fold.ml" 113 3721 3760
+)
+"map_fold.ml" 141 4570 4584 "map_fold.ml" 141 4570 4610
+call(
+  stack
+)
+type(
+  ('a3, 'b3 * 'b3) map_or_fold -> 'b3
+)
+"map_fold.ml" 142 4611 4630 "map_fold.ml" 142 4611 4631
+type(
+  ('a3, 'b3 * 'b3) map_or_fold * (int * int)
+)
+ident(
+  def x "map_fold.ml" 142 4611 4632 "map_fold.ml" 144 4684 4718
+)
+"map_fold.ml" 142 4611 4632 "map_fold.ml" 142 4611 4633
+type(
+  'b3
+)
+ident(
+  def r "map_fold.ml" 142 4611 4637 "map_fold.ml" 144 4684 4718
+)
+"map_fold.ml" 142 4611 4643 "map_fold.ml" 142 4611 4644
+type(
+  ('a3, 'b3 * 'b3) map_or_fold * (int * int)
+)
+ident(
+  int_ref x "map_fold.ml" 142 4611 4630 "map_fold.ml" 142 4611 4631
+)
+"map_fold.ml" 143 4650 4659 "map_fold.ml" 143 4650 4660
+type(
+  'a3
+)
+"map_fold.ml" 143 4650 4655 "map_fold.ml" 143 4650 4660
+type(
+  ('a3, 'b3 * 'b3) map_or_fold
+)
+"map_fold.ml" 143 4650 4663 "map_fold.ml" 143 4650 4664
+type(
+  int
+)
+ident(
+  def i "map_fold.ml" 143 4650 4672 "map_fold.ml" 143 4650 4683
+)
+"map_fold.ml" 143 4650 4666 "map_fold.ml" 143 4650 4667
+type(
+  int
+)
+"map_fold.ml" 143 4650 4662 "map_fold.ml" 143 4650 4668
+type(
+  int * int
+)
+"map_fold.ml" 143 4650 4655 "map_fold.ml" 143 4650 4668
+type(
+  ('a3, 'b3 * 'b3) map_or_fold * (int * int)
+)
+"map_fold.ml" 143 4650 4672 "map_fold.ml" 143 4650 4677
+type(
+  int -> int -> 'b3 -> (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+ident(
+  int_ref merge "map_fold.ml" 121 4041 4049 "map_fold.ml" 121 4041 4054
+)
+"map_fold.ml" 143 4650 4678 "map_fold.ml" 143 4650 4679
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 143 4650 4663 "map_fold.ml" 143 4650 4664
+)
+"map_fold.ml" 143 4650 4680 "map_fold.ml" 143 4650 4681
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 143 4650 4663 "map_fold.ml" 143 4650 4664
+)
+"map_fold.ml" 143 4650 4682 "map_fold.ml" 143 4650 4683
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 142 4611 4632 "map_fold.ml" 142 4611 4633
+)
+"map_fold.ml" 143 4650 4672 "map_fold.ml" 143 4650 4683
+call(
+  tail
+)
+type(
+  (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 144 4684 4694 "map_fold.ml" 144 4684 4695
+type(
+  'b3 * 'b3
+)
+"map_fold.ml" 144 4684 4689 "map_fold.ml" 144 4684 4695
+type(
+  ('a3, 'b3 * 'b3) map_or_fold
+)
+"map_fold.ml" 144 4684 4698 "map_fold.ml" 144 4684 4699
+type(
+  int
+)
+ident(
+  def i "map_fold.ml" 144 4684 4707 "map_fold.ml" 144 4684 4718
+)
+"map_fold.ml" 144 4684 4701 "map_fold.ml" 144 4684 4702
+type(
+  int
+)
+ident(
+  def j "map_fold.ml" 144 4684 4707 "map_fold.ml" 144 4684 4718
+)
+"map_fold.ml" 144 4684 4697 "map_fold.ml" 144 4684 4703
+type(
+  int * int
+)
+"map_fold.ml" 144 4684 4689 "map_fold.ml" 144 4684 4703
+type(
+  ('a3, 'b3 * 'b3) map_or_fold * (int * int)
+)
+"map_fold.ml" 144 4684 4707 "map_fold.ml" 144 4684 4712
+type(
+  int -> int -> 'b3 -> (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+ident(
+  int_ref merge "map_fold.ml" 121 4041 4049 "map_fold.ml" 121 4041 4054
+)
+"map_fold.ml" 144 4684 4713 "map_fold.ml" 144 4684 4714
+type(
+  int
+)
+ident(
+  int_ref i "map_fold.ml" 144 4684 4698 "map_fold.ml" 144 4684 4699
+)
+"map_fold.ml" 144 4684 4715 "map_fold.ml" 144 4684 4716
+type(
+  int
+)
+ident(
+  int_ref j "map_fold.ml" 144 4684 4701 "map_fold.ml" 144 4684 4702
+)
+"map_fold.ml" 144 4684 4717 "map_fold.ml" 144 4684 4718
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 142 4611 4632 "map_fold.ml" 142 4611 4633
+)
+"map_fold.ml" 144 4684 4707 "map_fold.ml" 144 4684 4718
+call(
+  tail
+)
+type(
+  (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 142 4611 4637 "map_fold.ml" 144 4684 4718
+type(
+  (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 142 4611 4625 "map_fold.ml" 144 4684 4719
+type(
+  ('a3, 'b3 * 'b3) map_or_fold * (int * int) ->
+  'b3 -> (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+"map_fold.ml" 145 4720 4726 "map_fold.ml" 145 4720 4731
+type(
+  (('a3, 'b3 * 'b3) map_or_fold * (int * int)) list
+)
+ident(
+  int_ref tasks "map_fold.ml" 114 3787 3795 "map_fold.ml" 114 3787 3800
+)
+"map_fold.ml" 140 4555 4559 "map_fold.ml" 145 4720 4731
+call(
+  stack
+)
+type(
+  unit
+)
+"map_fold.ml" 147 4806 4818 "map_fold.ml" 147 4806 4819
+type(
+  int
+)
+"map_fold.ml" 147 4806 4820 "map_fold.ml" 147 4806 4821
+type(
+  int
+)
+"map_fold.ml" 147 4806 4822 "map_fold.ml" 147 4806 4823
+type(
+  'b3
+)
+ident(
+  def r "map_fold.ml" 147 4806 4852 "map_fold.ml" 147 4806 4853
+)
+"map_fold.ml" 147 4806 4818 "map_fold.ml" 147 4806 4823
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 147 4806 4826 "map_fold.ml" 147 4806 4838
+type(
+  (int, int * int * 'b3) Hashtbl.t -> int -> int * int * 'b3
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"map_fold.ml" 147 4806 4839 "map_fold.ml" 147 4806 4846
+type(
+  (int, int * int * 'b3) Hashtbl.t
+)
+ident(
+  int_ref results "map_fold.ml" 120 4001 4009 "map_fold.ml" 120 4001 4016
+)
+"map_fold.ml" 147 4806 4847 "map_fold.ml" 147 4806 4848
+type(
+  int
+)
+"map_fold.ml" 147 4806 4826 "map_fold.ml" 147 4806 4848
+call(
+  stack
+)
+type(
+  int * int * 'b3
+)
+"map_fold.ml" 147 4806 4852 "map_fold.ml" 147 4806 4853
+type(
+  'b3
+)
+ident(
+  int_ref r "map_fold.ml" 147 4806 4822 "map_fold.ml" 147 4806 4823
+)
+"map_fold.ml" 147 4806 4814 "map_fold.ml" 147 4806 4853
+type(
+  'b3
+)
+"map_fold.ml" 147 4806 4859 "map_fold.ml" 147 4806 4868
+type(
+  exn
+)
+"map_fold.ml" 147 4806 4872 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)
+ident(
+  int_ref acc "map_fold.ml" 113 3721 3779 "map_fold.ml" 113 3721 3782
+)
+"map_fold.ml" 147 4806 4810 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)
+"map_fold.ml" 140 4555 4559 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)
+"map_fold.ml" 121 4041 4045 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)
+"map_fold.ml" 120 4001 4005 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)
+"map_fold.ml" 114 3787 3791 "map_fold.ml" 147 4806 4875
+type(
+  'b3
+)

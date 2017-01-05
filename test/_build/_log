@@ -1,0 +1,10 @@
+### Starting build.
+# Target: gamefun.ml.depends, tags: { debug, extension:ml, file:gamefun.ml, ocaml, ocamldep, package(functory), package(graphics), package(unix), quiet }
+ocamlfind ocamldep -package unix -package graphics -package functory -modules gamefun.ml > gamefun.ml.depends # cached
+# Target: gamefun.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:gamefun.cmo, file:gamefun.ml, implem, ocaml, package(functory), package(graphics), package(unix), quiet }
+ocamlfind ocamlc -c -g -package unix -package graphics -package functory -o gamefun.cmo gamefun.ml
++ ocamlfind ocamlc -c -g -package unix -package graphics -package functory -o gamefun.cmo gamefun.ml
+File "gamefun.ml", line 2, characters 5-13:
+Error: Unbound module Gamebase
+Command exited with code 2.
+# Compilation unsuccessful.
