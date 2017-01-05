@@ -1,4 +1,0 @@
-true: debug
-true: package(functory)
-true: package(unix)
-true: -traverse
