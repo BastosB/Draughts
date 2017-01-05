@@ -1,7 +1,10 @@
-# Draughts
+# Dames
 
-Demander : 
-	Comment faire pour modifier des valeurs dans la matrice sans avoir d'effets de bords (fonction play)
+Objectif : 
+Ne pas être le premier à ne plus pouvoir bouger.
+Une fois arrivé de l'autre coté du damier, un pion ne peut plus bouger. 
 
-	Comment est-ce que je dois m'y prendre pour trouver un enchainement de captures ? 
+Mouvements autorisés : 
+						- En diagonale, d'une case vers l'avant. 
+						- Possible de manger un pion adverse en avant ou en arrière. 
 
